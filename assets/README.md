@@ -1,6 +1,6 @@
 # Assets
 
-This directory is supposed to contain all the assets received from client which includes
+This directory is supposed to contain all the assets received from client which includes 
 
 - design files (.ai .pdf .png .psd)
 - text
