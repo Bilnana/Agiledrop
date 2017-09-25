@@ -5,3 +5,40 @@
 //
 // ========================================
 
+.layout-container{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  clear: both;
+}
+
+.container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar-first{
+  width: 24%;
+  display: inline-block;
+  //background-color:red;
+  float: left;
+}
+.sidebar-second{
+  width: 24%;
+  display: inline-block;
+  float: right;
+  //background-color: purple;
+}
+
+.sidebar-one .main-container{
+  width: 74%;
+  display: inline-block;
+  //background-color:yellow;
+
+}
+
+.sidebar-none .main-container{
+  width: 100%;
+  //background-color:green;
+}
