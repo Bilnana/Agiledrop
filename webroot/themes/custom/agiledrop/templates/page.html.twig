@@ -52,7 +52,7 @@
     <header id="header" class="header">
       <div class="layout-container clearfix">
         <div class="container">
-          {{ page.secondary_menu }}
+          {{ page.page_top}}
         </div>
         <div class="container">
           {{ page.primary_menu }}
@@ -94,16 +94,16 @@
             </aside>
           {% endif %}
       </div>
+        {% if page.featured_bottom_first or page.featured_bottom_second %}
+          <div class="featured-bottom layout-container clearfix">
+                {{ page.featured_bottom_first }}
+              <div class="container">
+                  {{ page.featured_bottom_second }}
+              </div>
+          </div>
+        {% endif %}
     </div>
-    {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
-      <div class="featured-bottom">
-        <aside class="layout-container clearfix">
-          {{ page.featured_bottom_first }}
-          {{ page.featured_bottom_second }}
-          {{ page.featured_bottom_third }}
-        </aside>
-      </div>
-    {% endif %}
+
     <footer class="site-footer">
       <div class="layout-container">
         {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
