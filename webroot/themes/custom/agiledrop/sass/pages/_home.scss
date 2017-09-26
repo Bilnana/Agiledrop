@@ -31,5 +31,39 @@
     float: right;
     margin-bottom: 20px;
   }
+}
 
+/******** Latest events home-page *********/
+
+.region-featured-bottom-first{
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+.latest-events{
+  .latest-event-item{
+    display: inline-block;
+    width: 23%;
+    margin-left: 2%;
+    padding-bottom: 3%;
+    background-color:$white;
+    text-align: center;
+  }
+  .latest-event-item:first-child{
+    margin-left: 0;
+  }
+  .latest-event-img{
+
+  }
+  .latest-event-title{
+    a{
+      color: $black;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .latest-event-stdate{
+    color: $red;
+    font-size: 16px;
+    margin: 3%;
+  }
 }
