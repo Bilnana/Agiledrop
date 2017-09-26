@@ -23,3 +23,24 @@
     float: right;
   }
 }
+
+/*******  HEADER  SLIDER********/
+.banner{
+  position:relative;
+  text-align: center;
+  .slick-dots{
+    bottom: 5%;
+    .button{
+      border: 1px $white;
+      background-color: none;
+    }
+  }
+  .caption{
+    color: $white;
+    position: absolute;
+    vertical-align: middle;
+    top: 190px;
+    left:5%;
+    right: 5%;
+  }
+}
