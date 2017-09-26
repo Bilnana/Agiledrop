@@ -50,18 +50,23 @@
 <div id="page-wrapper">
   <div id="page">
     <header id="header" class="header">
-      <div class="layout-container clearfix">
-        <div class="container">
-          {{ page.page_top}}
-        </div>
-        <div class="container">
-          {{ page.primary_menu }}
-        </div>
-        <div class="banner">
-          {{ page.header }}
-        </div>
+      <div class="layout-container">
+          <div class="container">
+              {{ page.top_block}}
+          </div>
       </div>
+        <div class="layout-container">
+            <div class="container">
+              {{ page.primary_menu }}
+            </div>
+        </div>
+        <div class="layout-container">
+            <div class="banner">
+              {{ page.header }}
+            </div>
+        </div>
     </header>
+
     {% if page.featured_top %}
       <div class="featured-top">
         <div class="featured-top__inner layout-container clearfix">
@@ -71,6 +76,7 @@
         </div>
       </div>
     {% endif %}
+
     <div id="main-wrapper" class="layout-container clearfix">
         <div class="container">
           {% if page.sidebar_first %}
@@ -94,6 +100,7 @@
             </aside>
           {% endif %}
       </div>
+
         {% if page.featured_bottom_first or page.featured_bottom_second %}
           <div class="featured-bottom layout-container clearfix">
                 {{ page.featured_bottom_first }}
