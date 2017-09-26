@@ -5,6 +5,35 @@
 //
 // ========================================
 
-.navigation {
+/********** MAIN MENU ***********/
+
+.region-primary-menu{
+    text-align: center;
+
+    ul{
+      display: block;
+    }
+    li{
+      display: inline-block;
+    }
+    .menu-item{
+      margin-left: 40px;
+    }
+    .menu-item:first-child{
+      margin-left: 0;
+    }
+
+  .block-system-branding-block{
+    display: inline-block;
+    float: left;
+  }
+  .menu--main{
+    display: inline-block;
+    text-align: center;
+  }
+  .menu--account{
+    display: inline-block;
+    float: right;
+  }
 
 }
