@@ -84,3 +84,17 @@
 		opacity: $opacity;
 	}
 }
+
+
+/********* MY MIXINS ************/
+
+@mixin button-blue{
+	background-color: $blue;
+	border-radius: 25px;
+	padding: 10px 15px 10px 15px;
+	font-size: 16px;
+	color: $white;
+	font-weight: bold;
+	border: 2px solid $blue;
+	margin-right: 10px;
+}

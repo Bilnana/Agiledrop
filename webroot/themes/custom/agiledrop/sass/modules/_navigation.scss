@@ -16,6 +16,9 @@
     li{
       display: inline-block;
     }
+    a{
+      text-decoration: none;
+    }
     .menu-item{
       margin-left: 40px;
     }
@@ -34,6 +37,9 @@
   .menu--account{
     display: inline-block;
     float: right;
+    a{
+      @include button-blue;
+    }
   }
 
 }
