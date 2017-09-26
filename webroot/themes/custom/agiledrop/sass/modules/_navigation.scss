@@ -19,27 +19,45 @@
     a{
       text-decoration: none;
     }
+
+  //site logo
+  .block-system-branding-block{
+    display: inline-block;
+    float: left;
+  }
+
+  //main-menu
+  .menu--main{
+    display: inline-block;
+    text-align: center;
     .menu-item{
       margin-left: 40px;
     }
     .menu-item:first-child{
       margin-left: 0;
     }
-
-  .block-system-branding-block{
-    display: inline-block;
-    float: left;
-  }
-  .menu--main{
-    display: inline-block;
-    text-align: center;
-  }
-  .menu--account{
-    display: inline-block;
-    float: right;
     a{
-      @include button-blue;
+      color: $grey;
+      font-size: 20px;
+    }
+    a:hover, a:active{
+      color: $black;
     }
   }
 
+  //login menu
+  .menu--account{
+    display: inline-block;
+    float: right;
+    .menu-item{
+      margin-left: 25px;
+      a{
+        @include button-blue;
+      }
+    }
+    .menu-item:first-child{
+      margin-left: 0;
+    }
+
+  }
 }
