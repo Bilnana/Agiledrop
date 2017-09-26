@@ -49,8 +49,11 @@
   display: table;
   vertical-align: middle;
   margin: auto;
+  color: $black;
+
   a{
     text-decoration:none;
+    color: $black;
   }
   ul{
     list-style-type: none;
@@ -67,6 +70,8 @@
  .region-footer-third{
    display: table-cell;
    width: 15%;
+   color: $black;
+
  }
  .region-footer-fourth{
    display: table-cell;
