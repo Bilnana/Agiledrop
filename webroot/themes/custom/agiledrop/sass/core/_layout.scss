@@ -48,16 +48,32 @@
 .site-footer__top {
   display: table;
   vertical-align: middle;
+  margin: auto;
+  a{
+    text-decoration:none;
+  }
+  ul{
+    list-style-type: none;
+  }
 
-
- .region-footer-first,
- .region-footer-second,
- .region-footer-third,
+ .region-footer-first{
+   display: table-cell;
+   width: 9%;
+ }
+ .region-footer-second{
+   display: table-cell;
+   width: 15%;
+ }
+ .region-footer-third{
+   display: table-cell;
+   width: 15%;
+ }
  .region-footer-fourth{
    display: table-cell;
-   width: 25%;
+   width: 23%;
  }
-
-
-
+ .region-footer-fifth{
+   display: table-cell;
+   width: 27%;
+ }
 }
