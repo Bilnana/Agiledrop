@@ -15,7 +15,7 @@ libraries:
 regions:
   header: Header
   primary_menu: 'Primary menu'
-  page_top: 'Page top'
+  top_block: 'Page top'
   featured_top: 'Featured top'
   content: Content
   sidebar_first: 'Sidebar first'
