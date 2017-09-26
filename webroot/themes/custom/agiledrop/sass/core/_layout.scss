@@ -50,6 +50,8 @@
   vertical-align: middle;
   margin: auto;
   color: $black;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   a{
     text-decoration:none;
@@ -81,4 +83,11 @@
    display: table-cell;
    width: 27%;
  }
+}
+.region-footer-six{
+  text-align: center;
+  padding: 20px;
+  hr{
+    width: 1200px;
+  }
 }
