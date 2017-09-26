@@ -42,3 +42,22 @@
   width: 100%;
   //background-color:green;
 }
+
+
+//Footer
+.site-footer__top {
+  display: table;
+  vertical-align: middle;
+
+
+ .region-footer-first,
+ .region-footer-second,
+ .region-footer-third,
+ .region-footer-fourth{
+   display: table-cell;
+   width: 25%;
+ }
+
+
+
+}
