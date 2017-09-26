@@ -4,6 +4,11 @@
 // Basic page layouts, widths, margins, paddings
 //
 // ========================================
+body{
+  a{
+    text-decoration: none;
+  }
+}
 
 .layout-container{
   margin-left: auto;

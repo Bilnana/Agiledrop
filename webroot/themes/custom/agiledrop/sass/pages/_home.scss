@@ -1,0 +1,35 @@
+.home-intro{
+  display:inline-block;
+  width:60%;
+  float: left;
+  a{
+    color: $black;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
+.sidebar-info{
+  display: inline-block;
+  width: 38%;
+  float: right;
+  .node--view-mode-teaser{
+    display: block;
+  }
+  .field--name-title{
+    display: inline-block;
+    width: 80%;
+    float: right;
+    font-size: 0.7em;
+  }
+  .field--name-field-item-image{
+    display: inline-block;
+    float: left;
+  }
+  .field--name-body{
+    display: inline-block;
+    width: 80%;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+}
