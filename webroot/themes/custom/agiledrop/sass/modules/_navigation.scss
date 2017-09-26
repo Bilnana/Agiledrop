@@ -9,6 +9,7 @@
 
 .region-primary-menu{
     text-align: center;
+    padding: 10px;
 
     ul{
       display: block;
@@ -53,6 +54,9 @@
       margin-left: 25px;
       a{
         @include button-blue;
+      }
+      a:hover, a:active{
+        @include button-hover;
       }
     }
     .menu-item:first-child{
