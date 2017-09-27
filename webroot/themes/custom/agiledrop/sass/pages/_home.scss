@@ -67,3 +67,31 @@
     margin: 3%;
   }
 }
+
+/********* Featured companies **********/
+
+.companies-home-row{
+  display: inline-block;
+  width: 33%;
+  .companies-home-logo{
+    float: left;
+    display: inline-block;
+  }
+  .companies-home-title{
+    display: inline-block;
+    float: right;
+    width: 65%;
+    a{
+      color: $black;
+      font-weight: bold;
+      @include rem('font-size', 18px);
+
+    }
+  }
+  .companies-home-body{
+    display: inline-block;
+    float: right;
+    width: 65%;
+    text-align: left;
+  }
+}
