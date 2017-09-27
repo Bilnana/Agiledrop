@@ -54,6 +54,7 @@
   }
 }
 .latest-events{
+  text-align: justify;
 
   .latest-event-item{
     display: inline-block;
@@ -96,6 +97,9 @@
 
     }
 }
+.featured-companies-home{
+  text-align: justify;
+}
 .companies-home-row{
   display: inline-block;
   max-width: 385px;
@@ -121,5 +125,18 @@
     float: right;
     width: 65%;
     text-align: left;
+  }
+}
+
+/***** Custum block with button link *****/
+.block-block-content3d674abc-ec60-4786-93eb-8f628e0c6463{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  a{
+    @include button-blue;
+  }
+  a:hover, a:active{
+    @include button-hover;
   }
 }
