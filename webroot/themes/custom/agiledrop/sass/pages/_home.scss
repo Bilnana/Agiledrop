@@ -1,6 +1,8 @@
+
+/********* Home inntro block ********/
 .home-intro{
   display:inline-block;
-  width:60%;
+  max-width:780px;
   float: left;
   a{
     color: $black;
@@ -8,12 +10,17 @@
     font-size: 1.5em;
   }
 }
+
+/********* Sidebar home  ************/
 .sidebar-info{
   display: inline-block;
-  width: 38%;
+  max-width: 390px;
   float: right;
   .node--view-mode-teaser{
     display: block;
+  }
+  .views-row{
+    max-width: 390px;
   }
   .field--name-title{
     display: inline-block;
@@ -38,11 +45,20 @@
 .region-featured-bottom-first{
   padding-top: 80px;
   padding-bottom: 120px;
+  h2::after{
+    content: "FIND YOURS";
+    margin-top: 5px;
+    @include rem('font-size', 16px);
+    display: block;
+
+  }
 }
 .latest-events{
+  text-align: justify;
+
   .latest-event-item{
     display: inline-block;
-    width: 23%;
+    max-width: 270px;
     margin-left: 2%;
     padding-bottom: 3%;
     background-color:$white;
@@ -66,4 +82,104 @@
     font-size: 16px;
     margin: 3%;
   }
+}
+
+/********* Featured companies **********/
+.region-featured-bottom-second{
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+    h2::after{
+      content: "FIND YOUR COMPANY";
+      margin-top:5px;
+      @include rem('font-size', 16px);
+      display: block;
+
+    }
+}
+.featured-companies-home{
+  text-align: justify;
+}
+.companies-home-row{
+  display: inline-block;
+  max-width: 385px;
+  margin-bottom: 3%;
+
+  .companies-home-logo{
+    float: left;
+    display: inline-block;
+  }
+  .companies-home-title{
+    display: inline-block;
+    float: right;
+    width: 65%;
+    a{
+      color: $black;
+      font-weight: bold;
+      @include rem('font-size', 18px);
+
+    }
+  }
+  .companies-home-body{
+    display: inline-block;
+    float: right;
+    width: 65%;
+    text-align: left;
+  }
+}
+
+/***** Custum block with button link *****/
+.block-block-content3d674abc-ec60-4786-93eb-8f628e0c6463{
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+
+  a{
+    @include button-blue;
+  }
+  a:hover, a:active{
+    @include button-hover;
+  }
+}
+.t1{
+  position: absolute;
+  right: 100px;
+  bottom: -129px;
+  z-index: 1;
+}
+.t2{
+  position: absolute;
+  bottom: -129px;
+  right: 0;
+}
+
+/***** Custum block Free service *****/
+.region-featured-bottom-third{
+  text-align: center;
+
+  .h1{
+    @include rem('font-size', 36px);
+  }
+
+  .free-service{
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  a{
+    @include button-blue;
+  }
+  a:hover, a:active{
+    @include button-hover;
+  }
+  .buttons{
+    padding-top:40px;
+
+    .btn-sign{
+      margin-right: 10px;
+    }
+    .btn-contact{
+      margin-left: 10px;
+    }
+  }
+
 }
