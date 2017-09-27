@@ -8,6 +8,9 @@ body{
   a{
     text-decoration: none;
   }
+  hr{
+    color: $grey-border;
+  }
 }
 
 .layout-container{
@@ -54,55 +57,4 @@ body{
 .sidebar-none .main-container{
   width: 100%;
   //background-color:green;
-}
-
-
-/***** Footer *****/
-
-.site-footer__top {
-  display: table;
-  vertical-align: middle;
-  margin: auto;
-  color: $black;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  a{
-    text-decoration:none;
-    color: $black;
-  }
-  ul{
-    list-style-type: none;
-  }
-
- .region-footer-first{
-   display: table-cell;
-   width: 9%;
- }
- .region-footer-second{
-   display: table-cell;
-   width: 15%;
- }
- .region-footer-third{
-   display: table-cell;
-   width: 15%;
-   color: $black;
-
- }
- .region-footer-fourth{
-   display: table-cell;
-   width: 23%;
- }
- .region-footer-fifth{
-   display: table-cell;
-   width: 27%;
- }
-}
-
-.region-footer-six{
-  text-align: center;
-  padding: 20px;
-  hr{
-    width: 1200px;
-  }
 }

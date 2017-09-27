@@ -5,6 +5,76 @@
 //
 // ========================================
 
-.footer {
+/***** Footer *****/
+
+.site-footer__top {
+  display: table;
+  vertical-align: middle;
+  margin: auto;
+  color: $black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: justify;
+
+  a{
+    text-decoration:none;
+    color: $black;
+
+  }
+  ul{
+    list-style-type: none;
+  }
+
+  .region-footer-first{
+    display: table-cell;
+    width:195px;
+    padding-left: 50px;
+  }
+  .region-footer-second{
+    display: table-cell;
+    width: 195px;
+  }
+  .region-footer-third{
+    display: table-cell;
+    width: 195px;
+    color: $black;
+  }
+  .region-footer-fourth{
+    display: table-cell;
+    width: 285px;
+  }
+  .region-footer-fifth{
+    display: table-cell;
+    width: 305px;
+    padding-right: 50px;
+  }
+}
+
+.region-footer-six{
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  hr{
+    width: 1200px;
+    color: $grey-border;
+  }
+  img{
+    width:350px;
+  }
+  .f1{
+    position: absolute;
+    top: -212px;
+    left: 0;
+    z-index: -5;
+
+  }
+  .f2{
+    position: absolute;
+    bottom:-2px;
+    right:0;
+    z-index: 10;
+
+  }
+
 
 }
