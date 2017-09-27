@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/classy/templates/navigation/vertical-tabs.html.twig */
-class __TwigTemplate_1c284cdd7d2aae6c435b9be917c0cfc936490e6e1dc07a1fda67fba87dbc368a extends Twig_Template
+/* core/themes/stable/templates/admin/views-ui-container.html.twig */
+class __TwigTemplate_4d74f19fddc78c9611a770f72b0c2d03d91c97cc5bac80a68abc4103af3069e8 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -39,9 +39,9 @@ class __TwigTemplate_1c284cdd7d2aae6c435b9be917c0cfc936490e6e1dc07a1fda67fba87db
             throw $e;
         }
 
-        // line 13
+        // line 11
         echo "<div";
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["attributes"]) ? $context["attributes"] : null), "setAttribute", array(0 => "data-vertical-tabs-panes", 1 => true), "method"), "html", null, true));
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["attributes"]) ? $context["attributes"] : null), "html", null, true));
         echo ">";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["children"]) ? $context["children"] : null), "html", null, true));
         echo "</div>
@@ -50,7 +50,7 @@ class __TwigTemplate_1c284cdd7d2aae6c435b9be917c0cfc936490e6e1dc07a1fda67fba87db
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/navigation/vertical-tabs.html.twig";
+        return "core/themes/stable/templates/admin/views-ui-container.html.twig";
     }
 
     public function isTraitable()
@@ -60,7 +60,7 @@ class __TwigTemplate_1c284cdd7d2aae6c435b9be917c0cfc936490e6e1dc07a1fda67fba87db
 
     public function getDebugInfo()
     {
-        return array (  43 => 13,);
+        return array (  43 => 11,);
     }
 
     public function getSource()
@@ -68,16 +68,14 @@ class __TwigTemplate_1c284cdd7d2aae6c435b9be917c0cfc936490e6e1dc07a1fda67fba87db
         return "{#
 /**
  * @file
- * Theme override for vertical tabs.
+ * Theme override for a generic views UI container/wrapper.
  *
- * Available variables
- * - attributes: A list of HTML attributes for the wrapper element.
- * - children: The rendered tabs.
- *
- * @see template_preprocess_vertical_tabs()
+ * Available variables:
+ * - attributes: HTML attributes to apply to the container element.
+ * - children: The remaining elements such as dropbuttons and tabs.
  */
 #}
-<div{{ attributes.setAttribute('data-vertical-tabs-panes', TRUE) }}>{{ children }}</div>
+<div{{ attributes }}>{{ children }}</div>
 ";
     }
 }

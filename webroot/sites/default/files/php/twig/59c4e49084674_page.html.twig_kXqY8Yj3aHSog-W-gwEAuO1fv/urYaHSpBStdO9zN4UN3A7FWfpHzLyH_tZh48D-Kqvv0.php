@@ -132,7 +132,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
 
         ";
         // line 104
-        if (($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_first", array()) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_second", array()))) {
+        if ((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_first", array()) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_second", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_third", array()))) {
             // line 105
             echo "          <div class=\"featured-bottom\">
               <div class=\"layout-container-grey\">
@@ -337,7 +337,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
           {% endif %}
       </div>
 
-        {% if page.featured_bottom_first or page.featured_bottom_second %}
+        {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
           <div class=\"featured-bottom\">
               <div class=\"layout-container-grey\">
                   <div class=\"container\">
