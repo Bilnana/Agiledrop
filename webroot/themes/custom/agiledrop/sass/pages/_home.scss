@@ -132,11 +132,37 @@
 .block-block-content3d674abc-ec60-4786-93eb-8f628e0c6463{
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 120px;
+
   a{
     @include button-blue;
   }
   a:hover, a:active{
     @include button-hover;
   }
+}
+
+/***** Custum block Free service *****/
+.region-featured-bottom-third{
+  text-align: center;
+  .free-service{
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  a{
+    @include button-blue;
+  }
+  a:hover, a:active{
+    @include button-hover;
+  }
+  .buttons{
+    padding-top:40px;
+
+    .btn-sign{
+      margin-right: 10px;
+    }
+    .btn-contact{
+      margin-left: 10px;
+    }
+  }
+
 }

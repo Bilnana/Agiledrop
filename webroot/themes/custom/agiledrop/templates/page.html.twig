@@ -103,14 +103,19 @@
 
         {% if page.featured_bottom_first or page.featured_bottom_second %}
           <div class="featured-bottom">
-              <div class="layout-container-grey clearfix">
+              <div class="layout-container-grey">
                   <div class="container">
                      {{ page.featured_bottom_first }}
                   </div>
               </div>
-              <div class="layout-container clearfix">
+              <div class="layout-container">
                   <div class="container">
                       {{ page.featured_bottom_second }}
+                  </div>
+              </div>
+              <div class="layout-container">
+                  <div class="container">
+                      {{ page.featured_bottom_third }}
                   </div>
               </div>
           </div>
