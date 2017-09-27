@@ -1,6 +1,8 @@
+
+/********* Home inntro block ********/
 .home-intro{
   display:inline-block;
-  width:60%;
+  max-width:780px;
   float: left;
   a{
     color: $black;
@@ -8,12 +10,17 @@
     font-size: 1.5em;
   }
 }
+
+/********* Sidebar home  ************/
 .sidebar-info{
   display: inline-block;
-  width: 38%;
+  max-width: 390px;
   float: right;
   .node--view-mode-teaser{
     display: block;
+  }
+  .views-row{
+    max-width: 390px;
   }
   .field--name-title{
     display: inline-block;
@@ -38,11 +45,19 @@
 .region-featured-bottom-first{
   padding-top: 80px;
   padding-bottom: 120px;
+  h2::after{
+    content: "FIND YOURS";
+    margin-top: 5px;
+    @include rem('font-size', 16px);
+    display: block;
+
+  }
 }
 .latest-events{
+
   .latest-event-item{
     display: inline-block;
-    width: 23%;
+    max-width: 270px;
     margin-left: 2%;
     padding-bottom: 3%;
     background-color:$white;
@@ -69,10 +84,23 @@
 }
 
 /********* Featured companies **********/
+.region-featured-bottom-second{
+  padding-top: 80px;
+  padding-bottom: 120px;
 
+    h2::after{
+      content: "FIND YOUR COMPANY";
+      margin-top:5px;
+      @include rem('font-size', 16px);
+      display: block;
+
+    }
+}
 .companies-home-row{
   display: inline-block;
-  width: 33%;
+  max-width: 385px;
+  margin-bottom: 3%;
+
   .companies-home-logo{
     float: left;
     display: inline-block;
