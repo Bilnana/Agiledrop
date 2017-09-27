@@ -1,0 +1,81 @@
+.block-page-title-block::after{
+  content: "FIND YOUR OWN";
+  @include rem('font-size', 18px);
+}
+
+/******* Companies list ********/
+.companies-teaser{
+  owerflow: hidden;
+  width: 100%;
+}
+
+.companies-row{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid $grey-border;
+  overflow: hidden;
+  clear: both;
+   .views-field-title{
+     display:inline-block;
+     text-decoration: none;
+     color: $black;
+     font-size: 22px;
+     &::before{
+       content:"";
+       border-left: 3px solid $blue;
+       padding-left: 10px;
+     }
+     a{
+       color: $black;
+       font-size: 22px;
+     }
+   }
+
+  .company-logo{
+    width:20%;
+    display: inline-block;
+    float: left;
+  }
+  .company-body{
+    width: 70%;
+    display: inline-block;
+
+  }
+  .button-read{
+    margin-top: 20px;
+    float: left;
+    a{
+      @include button-blue;
+    }
+    a:hover, a:active{
+      @include button-hover;
+    }
+  }
+}
+
+.companies-row:hover{
+  .a{
+   @include button-hover;
+  }
+  .views-field-title::before{
+    border-left: 3px solid $orange;
+  }
+}
+.companies-row:last-child{
+  border-bottom: none;
+}
+
+/********** Featured top **********/
+.featured-top{
+  background-color: $grey;
+  text-align: center;
+  .form--inline{
+    display: flex;
+    justify-content: center;
+  }
+  .form-actions{
+
+
+  }
+
+}
