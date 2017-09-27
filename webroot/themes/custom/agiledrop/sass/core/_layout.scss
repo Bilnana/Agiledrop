@@ -4,6 +4,11 @@
 // Basic page layouts, widths, margins, paddings
 //
 // ========================================
+body{
+  a{
+    text-decoration: none;
+  }
+}
 
 .layout-container{
   margin-left: auto;
@@ -18,7 +23,11 @@
   margin-right: auto;
 }
 
+<<<<<<< HEAD
 .layout-container-topgi{
+=======
+.layout-container-grey{
+>>>>>>> 66386a0f8a560318158fd7af6b934af76444b5e1
   margin-left: auto;
   margin-right: auto;
   display: block;
