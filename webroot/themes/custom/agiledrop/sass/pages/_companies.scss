@@ -1,0 +1,31 @@
+.companies-teaser{
+  owerflow: hidden;
+  width: 100%;
+
+
+  .company-logo{
+    width:20%;
+    display: inline-block;
+    float: left;
+  }
+  .company-body{
+    width: 70%;
+    display: inline-block;
+  }
+  .company-title{
+    display:inline-block;
+    margin-left: 0;
+  }
+  .button-read{
+    margin-top: 20px;
+    float: left;
+  }
+}
+.companies-row{
+  //width: 1200px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid $grey-border;
+  overflow: hidden;
+  clear: both;
+}
