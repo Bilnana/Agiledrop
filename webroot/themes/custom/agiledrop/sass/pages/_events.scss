@@ -44,6 +44,15 @@
   .views-field-body{
     margin: 8%;
   }
+  .views-field-title{
+    margin-top: 10px;
+
+    a{
+      color: $white;
+      font-size: 20px;
+    }
+  }
+
   .button-read{
 
     a{
