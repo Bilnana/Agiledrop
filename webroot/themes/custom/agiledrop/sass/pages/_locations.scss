@@ -1,0 +1,18 @@
+
+.location-teaser{
+  text-align: justify;
+
+  .locations-row{
+    background-color: grey;
+    display: inline-block;
+    max-width: 270px;
+    margin-left:2.5%;
+    padding-bottom: 3%;
+    float: left;
+    margin-bottom:2.5%;
+  }
+  .locations-row:nth-child(4n+1){
+    margin-left:0;
+  }
+}
+
