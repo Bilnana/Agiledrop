@@ -57,3 +57,16 @@ body{
   width: 100%;
   //background-color:green;
 }
+
+
+/******* Banners on pages ********/
+.banner-page{
+  position: relative;
+  .text-owerlay{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    color:$white;
+  }
+}
