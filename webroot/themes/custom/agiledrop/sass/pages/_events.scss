@@ -18,16 +18,39 @@
     margin: auto;
   }
   .events-row:nth-child(2){
-    .event-image-teaser{
+    .views-field-field-event-image{
       order:1;
     }
   }
   .events-row:nth-child(5) {
-    .event-image-teaser {
+    .views-field-field-event-image {
       order: 1;
     }
   }
   .events-row:nth-child(3n+1){
     margin-left:0;
   }
+  .views-field-field-event-start-date{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 38px;
+  }
+  .views-field-field-event-end-date{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .views-field-body{
+    margin: 8%;
+  }
+  .button-read{
+    a{
+      @include button-blue;
+
+    }
+    a:hover{
+      @include button-hover;
+    }
+  }
+
 }
