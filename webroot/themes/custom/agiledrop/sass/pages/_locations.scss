@@ -1,15 +1,17 @@
 
 .location-teaser{
   text-align: justify;
-
+  .view-content{display:block}
   .locations-row{
     background-color: $grey-border;
     display: inline-block;
+    vertical-align: top;
     max-width: 270px;
     margin-left:2.5%;
-    padding-bottom: 6%;
+    //padding-bottom: 6%;
     float: left;
     margin-bottom:2.5%;
+
 
     .views-field-field-title-bottom{
       margin-top:10px;
