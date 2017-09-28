@@ -1,0 +1,33 @@
+.events-teaser{
+  text-align: justify;
+
+  .view-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .events-row{
+    max-width: 360px;
+    background: grey;
+    margin-left: 3.75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .event-image-teaser{
+    margin: auto;
+  }
+  .events-row:nth-child(2){
+    .event-image-teaser{
+      order:1;
+    }
+  }
+  .events-row:nth-child(5) {
+    .event-image-teaser {
+      order: 1;
+    }
+  }
+  .events-row:nth-child(3n+1){
+    margin-left:0;
+  }
+}
