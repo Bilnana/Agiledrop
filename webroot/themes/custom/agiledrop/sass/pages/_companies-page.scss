@@ -91,6 +91,7 @@
   border: 2px solid $grey-border;
   overflow: hidden;
   padding: 15px;
+  margin-bottom: 50px;
 
   p {
     display: inline-block;
@@ -115,6 +116,43 @@
     height: 222px;
     width: 100%;
 
+  }
+}
+
+
+/***** Events sidebar ********/
+.block-views-blocksidebar-events-companies-page-block-1{
+  h2::after{
+    content: "WHAT WE ARE UP TO";
+    @include rem('font-size', 18px);
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .views-row{
+    margin-bottom: 40px;
+  }
+
+  .views-field-title{
+    color:$black;
+    margin-bottom: 15px;
+    a{
+      padding-left: 20px;
+      color: $black;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    &::before{
+      content:"";
+      border-left: 3px solid $blue;
+
+    }
+  }
+  .views-field-field-event-start-date{
+    color: $red;
+    margin-bottom: 15px;
+    display: block;
   }
 }
 
