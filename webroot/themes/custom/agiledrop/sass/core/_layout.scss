@@ -4,6 +4,7 @@
 // Basic page layouts, widths, margins, paddings
 //
 // ========================================
+
 body{
   a{
     text-decoration: none;
@@ -11,6 +12,7 @@ body{
   hr{
     color: $grey-border;
   }
+  font-family: Karla-Regular;
 }
 
 .layout-container{
@@ -70,3 +72,6 @@ body{
     color:$white;
   }
 }
+
+
+
