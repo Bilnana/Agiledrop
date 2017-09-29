@@ -1,0 +1,133 @@
+.field--name-field-location-image{
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+
+/**** Information block fields ****/
+.field--name-field-location-phone-number{
+  @include field-location;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+}
+
+.field--name-field-location-website{
+  @include field-location;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+}
+.field--name-field-location-email{
+  @include field-location;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+}
+
+
+/**** Behavior when field is hover ****/
+.field--name-field-location-phone-number:hover,
+.field--name-field-location-email:hover,
+.field--name-field-location-website:hover{
+  border: 3px solid $orange;
+  color: $orange;
+  a{
+    color: $orange;
+    border-left: 3px solid $orange;
+  }
+}
+
+.field--name-field-location-taxonomy{
+  display:inline-block;
+  float: right;
+  width: 400px;
+  .field__label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .field__item{
+    display: inline-block;
+    padding: 8px;
+    background-color:$blue;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    a{
+      color:$white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  .field__item:nth-child(3n+1){
+    margin-left: 0px;
+  }
+}
+
+/**** Location map ****/
+.field--name-field-location-map{
+  @include map;
+}
+
+
+/**** Locations events sidebar ****/
+
+.block-views-blockupcoming-events-location-page-block-1{
+  h2::after{
+    content: "WHAT WE ARE UP TO";
+    @include rem('font-size', 18px);
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .views-row{
+    margin-bottom: 40px;
+  }
+
+  .views-field-title{
+    color:$black;
+    margin-bottom: 15px;
+    a{
+      padding-left: 20px;
+      color: $black;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    &::before{
+      content:"";
+      border-left: 3px solid $blue;
+
+    }
+  }
+  .views-field-field-event-start-date{
+    color: $red;
+    margin-bottom: 15px;
+    display: block;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
