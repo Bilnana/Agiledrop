@@ -1,4 +1,7 @@
-
+.location-teaser::before{
+  content: "FIND YOUR OWN";
+  @include rem('font-size', 18px);
+}
 .location-teaser{
   text-align: justify;
   .view-content{display:block}

@@ -1,9 +1,9 @@
-.block-page-title-block::after{
+
+/******* Companies list ********/
+.companies-teaser::before{
   content: "FIND YOUR OWN";
   @include rem('font-size', 18px);
 }
-
-/******* Companies list ********/
 .companies-teaser{
   owerflow: hidden;
   width: 100%;

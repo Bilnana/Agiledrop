@@ -55,7 +55,7 @@
   padding: 20px;
   position: relative;
   hr{
-    width: 1200px;
+    max-width: 1200px;
     color: $grey-border;
   }
   img{
@@ -75,6 +75,5 @@
     z-index: 10;
 
   }
-
 
 }
