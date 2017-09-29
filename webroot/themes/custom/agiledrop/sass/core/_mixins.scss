@@ -103,3 +103,60 @@
 	font-weight: bold;
 	border: 2px solid $orange;
 }
+
+
+/** Mixins for Field taxonomy company **/
+
+
+@mixin background($imgpath,$repeat: no-repeat) {
+	background: {
+		image: url($imgpath);
+		repeat: $repeat;
+	}
+}
+
+@mixin field-loc {
+	border: 3px solid $grey;
+	margin-bottom: 4%;
+	width: 45%;
+	display: flex;
+	align-items: center;
+
+}
+@mixin link-loc{
+	text-decoration: none;
+	font-size: 20px;
+	color: $grey;
+}
+
+@mixin field {
+	// padding: 1px;
+	border: 3px solid $grey;
+	margin-bottom: 4%;
+	//margin-left: 4%;
+	width: 45%;
+	display: inline-block;
+	position: relative;
+}
+@mixin link {
+	text-decoration: none;
+	font-size: 20px;
+	color: $grey;
+	display: inline-block;
+	position: absolute;
+	top: 35%;
+}
+@mixin pseudoPos {
+	padding: 8% 8% 8% 8%;
+	margin: 20px 10px 20px 10px;
+	width: 35px;
+	height: 35px;
+}
+
+
+@mixin pseudo($display: inline-block, $border-right: 3px solid $blue, $content: ''){
+	content: $content;
+	display: $display;
+	border-right: $border-right;
+}
+
