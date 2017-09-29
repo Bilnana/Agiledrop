@@ -6,8 +6,9 @@
     margin-bottom: 10px;
   }
   .field--name-body{
-
+    margin-bottom: 50px;
   }
+
 }
 
 
@@ -39,7 +40,7 @@
     font-family: FontAwesome;
     @include pseudoPos;
   }
-  margin-left: 4%;
+  margin-left: 7%;
 }
 
 .field--name-field-company-telephone{
@@ -67,7 +68,7 @@
     font-family: FontAwesome;
     @include pseudoPos;
   }
-  margin-left: 4%;
+  margin-left: 7%;
 }
 
 /**** behavior of information blocks when are hover ****/
@@ -83,3 +84,37 @@
     border-left: 3px solid $orange;
   }
 }
+
+
+/**** Company map ****/
+.field--name-field-company-map {
+  border: 2px solid $grey-border;
+  overflow: hidden;
+  padding: 15px;
+
+  p {
+    display: inline-block;
+    width: 15%;
+    padding-left: 20px;
+    border-left: 3px solid $blue;
+   // margin-left: 50px;
+    vertical-align: top;
+  }
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    font-size: 48px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+  iframe {
+    display: inline-block;
+    float: right;
+    max-width: 522px;
+    height: 222px;
+    width: 100%;
+
+  }
+}
+
