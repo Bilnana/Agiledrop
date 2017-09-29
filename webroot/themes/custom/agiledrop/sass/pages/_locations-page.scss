@@ -1,0 +1,48 @@
+.field--name-field-location-image{
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+
+/**** Information block fields ****/
+.field--name-field-location-phone-number{
+  @include field-location;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+}
+
+.field--name-field-location-website{
+  @include field-location;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+}
+.field--name-field-location-email{
+  @include field-location;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+}

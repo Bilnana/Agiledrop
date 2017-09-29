@@ -128,7 +128,6 @@
 	width: 400px;
 	height: 87px;
 	display: inline-table;
-
 }
 
 @mixin link {
@@ -150,6 +149,14 @@
 	height: 50px;
 	display: table-cell;
 	vertical-align: middle;
+}
+
+@mixin field-location {
+	border: 3px solid $grey-border;
+	margin-bottom: 7%;
+	width: 400px;
+	height: 87px;
+	display: table;
 }
 
 
