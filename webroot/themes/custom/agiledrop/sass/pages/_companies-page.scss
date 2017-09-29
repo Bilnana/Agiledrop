@@ -9,3 +9,77 @@
 
   }
 }
+
+
+/**** Field informations company ****/
+.field--name-field-company-taxsonomy{
+  @include field;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+
+}
+
+.field--name-field-company-website{
+  @include field;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+  margin-left: 4%;
+}
+
+.field--name-field-company-telephone{
+  @include field;
+
+  a{
+    @include link;
+  }
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+}
+
+.field--name-field-company-email{
+  @include field;
+
+  a{
+    @include link;
+  }
+
+  &::before {
+    content: "\f000";
+    font-family: FontAwesome;
+    @include pseudoPos;
+  }
+  margin-left: 4%;
+}
+
+/**** behavior of information blocks when are hover ****/
+
+.field--name-field-company-taxsonomy:hover,
+.field--name-field-company-website:hover,
+.field--name-field-company-telephone:hover,
+.field--name-field-company-email:hover{
+  border: 3px solid $orange;
+  color: $orange;
+  a{
+    color: $orange;
+    border-left: 3px solid $orange;
+  }
+}

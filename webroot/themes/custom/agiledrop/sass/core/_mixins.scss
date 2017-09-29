@@ -108,21 +108,14 @@
 /** Mixins for Field taxonomy company **/
 
 
-@mixin background($imgpath,$repeat: no-repeat) {
-	background: {
-		image: url($imgpath);
-		repeat: $repeat;
-	}
-}
-
 @mixin field-loc {
 	border: 3px solid $grey;
 	margin-bottom: 4%;
 	width: 45%;
 	display: flex;
 	align-items: center;
-
 }
+
 @mixin link-loc{
 	text-decoration: none;
 	font-size: 20px;
@@ -130,33 +123,40 @@
 }
 
 @mixin field {
-	// padding: 1px;
 	border: 3px solid $grey;
 	margin-bottom: 4%;
-	//margin-left: 4%;
-	width: 45%;
-	display: inline-block;
-	position: relative;
+	width: 400px;
+	height: 87px;
+	display: inline-table;
+
 }
+
 @mixin link {
-	text-decoration: none;
 	font-size: 20px;
 	color: $grey;
-	display: inline-block;
-	position: absolute;
-	top: 35%;
+	display: table-cell;//margin-left: 20px;
+	vertical-align: middle;
+	padding-left: 8%;
+	border-left: 3px solid $blue;
+	vertical-align: middle;
 }
+
+
 @mixin pseudoPos {
-	padding: 8% 8% 8% 8%;
-	margin: 20px 10px 20px 10px;
-	width: 35px;
-	height: 35px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 
-@mixin pseudo($display: inline-block, $border-right: 3px solid $blue, $content: ''){
-	content: $content;
-	display: $display;
-	border-right: $border-right;
-}
+/*@mixin background($imgpath,$repeat: no-repeat) {
+	background: {
+		image: url($imgpath);
+		repeat: $repeat;
+	}
+}*/
 
