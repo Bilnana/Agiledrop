@@ -90,3 +90,44 @@
 .field--name-field-location-map{
   @include map;
 }
+
+
+/**** Locations events sidebar ****/
+
+.block-views-blockupcoming-events-location-page-block-1{
+  h2::after{
+    content: "WHAT WE ARE UP TO";
+    @include rem('font-size', 18px);
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .views-row{
+    margin-bottom: 40px;
+  }
+
+  .views-field-title{
+    color:$black;
+    margin-bottom: 15px;
+    a{
+      padding-left: 20px;
+      color: $black;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    &::before{
+      content:"";
+      border-left: 3px solid $blue;
+
+    }
+  }
+  .views-field-field-event-start-date{
+    color: $red;
+    margin-bottom: 15px;
+    display: block;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
