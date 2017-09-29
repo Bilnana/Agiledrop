@@ -46,3 +46,16 @@
     @include pseudoPos;
   }
 }
+
+
+/**** Behavior when field is hover ****/
+.field--name-field-location-phone-number:hover,
+.field--name-field-location-email:hover,
+.field--name-field-location-website:hover{
+  border: 3px solid $orange;
+  color: $orange;
+  a{
+    color: $orange;
+    border-left: 3px solid $orange;
+  }
+}
