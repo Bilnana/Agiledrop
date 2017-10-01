@@ -1,6 +1,7 @@
+/*** Content event page ***/
 .node--type-events.node--view-mode-full{
   margin-top: 50px;
-  max-width:820px;
+  max-width:860px;
   .field--name-field-event-image{
     width:100%;
     margin-left: 40%;
@@ -26,12 +27,12 @@
     }
   }
   .field--name-field-event-start-date{
-    width: 405px;
+    width: 420px;
     display: inline-block;
     text-align: center;
   }
   .field--name-field-event-end-date{
-    width: 405px;
+    width: 420px;
     display: inline-block;
     text-align: center;
   }
@@ -46,5 +47,54 @@
     }
   .field--name-body{
     margin-top: 50px;
+  }
+}
+
+/*** About company sidebar info ***/
+.block-views-blockabout-company-event-page-block-1{
+  max-width: 260px;
+  owerflow: hidden;
+  clear: both;
+  border: 2px solid $grey-border;
+  padding: 10px;
+
+  .views-field-field-company-logo{
+    display: inline-block;
+    width:80px;
+  }
+  .views-field-title{
+    display: inline-block;
+    float: right;
+    margin-right: 20%;
+    vertical-align: middle;
+    margin-top: 10%;
+    a{
+      border-left: 3px solid $blue;
+      color: $black;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+  }
+  .views-field-view-node{
+    text-align: right;
+    padding-top: 10px;
+    a{
+      color: $black;
+      font-size: 18px;
+    }
+  }
+}
+/*** About company hover efect ***/
+.block-views-blockabout-company-event-page-block-1:hover{
+  .views-field-title{
+    a{
+      border-left: 3px solid $orange;
+      color: $grey;
+    }
+  }
+  .views-field-view-node {
+    a {
+      color: $orange;
+    }
   }
 }
