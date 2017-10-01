@@ -1,7 +1,7 @@
 <?php
 
-/* table.html.twig */
-class __TwigTemplate_98cf6ee9c325be56e5f6e2b50b209532e42534eaeb86ca76b1fbc0eee1a03602 extends Twig_Template
+/* core/themes/classy/templates/dataset/table.html.twig */
+class __TwigTemplate_4456c42d0e02b5888b7463842330123bc990bf269d45a9e254d5c0745ef326f4 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -276,7 +276,7 @@ $context["cell"], "active_table_sort", array())) ? ("is-active") : ("")));
 
     public function getTemplateName()
     {
-        return "table.html.twig";
+        return "core/themes/classy/templates/dataset/table.html.twig";
     }
 
     public function isTraitable()

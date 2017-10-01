@@ -1,7 +1,7 @@
 <?php
 
-/* {# inline_template_start #}<div class="field-plugin-summary">{{ summary|safe_join("<br />") }}</div> */
-class __TwigTemplate_f821c77039c217f90bf7a8f976486c27a1fbd3d077f048bd0be538f78a56fbe7 extends Twig_Template
+/* core/themes/classy/templates/navigation/menu-local-action.html.twig */
+class __TwigTemplate_04f482615e7cff6f8a2de611a6d2335822feada1ee7c3d7d712aff349f69cfc3 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -16,13 +16,13 @@ class __TwigTemplate_f821c77039c217f90bf7a8f976486c27a1fbd3d077f048bd0be538f78a5
     protected function doDisplay(array $context, array $blocks = array())
     {
         $tags = array();
-        $filters = array("safe_join" => 1);
+        $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
                 array(),
-                array('safe_join'),
+                array(),
                 array()
             );
         } catch (Twig_Sandbox_SecurityError $e) {
@@ -39,15 +39,18 @@ class __TwigTemplate_f821c77039c217f90bf7a8f976486c27a1fbd3d077f048bd0be538f78a5
             throw $e;
         }
 
-        // line 1
-        echo "<div class=\"field-plugin-summary\">";
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($this->env->getExtension('drupal_core')->safeJoin($this->env, (isset($context["summary"]) ? $context["summary"] : null), "<br />")));
-        echo "</div>";
+        // line 13
+        echo "<li";
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["attributes"]) ? $context["attributes"] : null), "html", null, true));
+        echo ">";
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["link"]) ? $context["link"] : null), "html", null, true));
+        echo "</li>
+";
     }
 
     public function getTemplateName()
     {
-        return "{# inline_template_start #}<div class=\"field-plugin-summary\">{{ summary|safe_join(\"<br />\") }}</div>";
+        return "core/themes/classy/templates/navigation/menu-local-action.html.twig";
     }
 
     public function isTraitable()
@@ -57,11 +60,24 @@ class __TwigTemplate_f821c77039c217f90bf7a8f976486c27a1fbd3d077f048bd0be538f78a5
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  43 => 13,);
     }
 
     public function getSource()
     {
-        return "{# inline_template_start #}<div class=\"field-plugin-summary\">{{ summary|safe_join(\"<br />\") }}</div>";
+        return "{#
+/**
+ * @file
+ * Theme override for a single local action link.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper element.
+ * - link: A rendered link element.
+ *
+ * @see template_preprocess_menu_local_action()
+ */
+#}
+<li{{ attributes }}>{{ link }}</li>
+";
     }
 }
