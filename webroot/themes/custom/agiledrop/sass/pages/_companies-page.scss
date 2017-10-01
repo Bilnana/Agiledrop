@@ -15,6 +15,7 @@
 /**** Field informations company ****/
 .field--name-field-company-taxsonomy{
   @include field;
+  color: $grey-border;
 
   a{
     @include link;
@@ -30,27 +31,30 @@
 
 .field--name-field-company-website{
   @include field;
+  color: $grey-border;
 
   a{
     @include link;
   }
 
   &::before {
-    content: "\f000";
+    content: "\f2b5";
     font-family: FontAwesome;
     @include pseudoPos;
+
   }
   margin-left: 7%;
 }
 
 .field--name-field-company-telephone{
   @include field;
+  color: $grey-border;
 
   a{
     @include link;
   }
   &::before {
-    content: "\f000";
+    content: "\f098";
     font-family: FontAwesome;
     @include pseudoPos;
   }
@@ -58,6 +62,7 @@
 
 .field--name-field-company-email{
   @include field;
+  color: $grey-border;
 
   a{
     @include link;
