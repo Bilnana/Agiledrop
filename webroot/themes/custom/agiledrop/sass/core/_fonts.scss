@@ -1,9 +1,13 @@
 
 @font-face{
   font-family:'Karla-Regular';
-  src: url('/themes/custom/agiledrop/assets/fonts/Karla-Regular.ttf') format('truetype');
+  src: url('/themes/custom/agiledrop/assets/stylesheets/fonts/Karla-Regular.ttf') format('truetype');
 }
 @font-face{
   font-family:'Karla-Italic';
-  src: url('webroot/themes/custom/agiledrop/assets/fonts/Karla-Italic.ttf') format('truetype');
+  src: url('/themes/custom/agiledrop/assets/stylesheets/fonts/Karla-Italic.ttf') format('truetype');
+}
+@font-face{
+  font-family:'FontAwesome';
+  src: url('/themes/custom/agiledrop/assets/stylesheets/fonts/fontawesome-webfont.ttf') format('truetype');
 }

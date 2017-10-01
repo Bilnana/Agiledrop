@@ -1,0 +1,141 @@
+/*** Content event page ***/
+.node--type-events.node--view-mode-full{
+  margin-top: 50px;
+  max-width:860px;
+  .field--name-field-event-image{
+    width:100%;
+    margin-left: 40%;
+    img{
+      border-radius: 50%;
+      height:180px;
+      width:180px;
+    }
+  }
+  .field--name-title{
+    display: block;
+    text-align: center;
+  }
+  .field--name-field-event-type-taxonomy{
+    text-align: center;
+    margin-bottom: 20px;
+    a{
+      border-left: 3px solid $blue;
+      padding-left:10px;
+      color: $black;
+      font-size: 20px;
+    }
+    a:hover{
+      border-left: 3px solid $orange;
+    }
+  }
+  .field--name-field-event-start-date{
+    width: 420px;
+    display: inline-block;
+    text-align: center;
+  }
+  .field--name-field-event-end-date{
+    width: 420px;
+    display: inline-block;
+    text-align: center;
+  }
+  .datetime{
+    border-left: 3px solid $blue;
+    padding-left:10px;
+    color: $black;
+    font-size: 18px;
+  }
+  .datetime:hover{
+      border-left: 3px solid $orange;
+    }
+  .field--name-body{
+    margin-top: 50px;
+  }
+}
+
+/*** About company sidebar info ***/
+.block-views-blockabout-company-event-page-block-1{
+  max-width: 260px;
+  border: 2px solid $grey-border;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: table;
+
+
+  .views-field-field-company-logo{
+    display: table-cell;
+    width:80px;
+  }
+  .views-field-title{
+    display: table-cell;
+    padding-left: 5px;
+    vertical-align: middle;
+    a{
+      border-left: 3px solid $blue;
+      color: $black;
+      font-size: 18px;
+      padding-left: 10px;
+    }
+  }
+  .views-field-view-node{
+    text-align: right;
+    padding-top: 10px;
+    a{
+      color: $black;
+      font-size: 18px;
+    }
+  }
+}
+
+/*** About location sidebar info ***/
+.block-views-blockabout-location-event-page-block-1{
+  max-width: 260px;
+  border: 2px solid $grey-border;
+  padding: 10px;
+  margin-bottom: 30px;
+  .views-field-field-location-image{
+    display: table-cell;
+    width:80px;
+  }
+  .views-field-title{
+    display: table-cell;
+    padding-left: 5px;
+    vertical-align: middle;
+    a{
+      border-left: 3px solid $blue;
+      color: $black;
+      font-size: 18px;
+      padding-left: 5px;
+    }
+  }
+  .views-field-view-node{
+    text-align: right;
+    padding-top: 10px;
+    a{
+      color: $black;
+      font-size: 18px;
+    }
+  }
+}
+/*** About company , about locationhover efect ***/
+.block-views-blockabout-company-event-page-block-1:hover,
+.block-views-blockabout-location-event-page-block-1:hover{
+  .views-field-title{
+    a{
+      border-left: 3px solid $orange;
+      color: $grey;
+    }
+  }
+  .views-field-view-node {
+    a {
+      color: $orange;
+    }
+  }
+}
+/*** About h2 ***/
+.block-block-contentefc5fd55-884c-45f1-a8d9-4a12a2e87297{
+  h2:after{
+    content:"ORGANIZER & LOCATION";
+    display: block;
+    font-size: 20px;
+  }
+}
