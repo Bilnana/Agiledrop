@@ -53,25 +53,24 @@
 /*** About company sidebar info ***/
 .block-views-blockabout-company-event-page-block-1{
   max-width: 260px;
-  owerflow: hidden;
-  clear: both;
   border: 2px solid $grey-border;
   padding: 10px;
+  margin-bottom: 30px;
+  display: table;
+
 
   .views-field-field-company-logo{
-    display: inline-block;
+    display: table-cell;
     width:80px;
   }
   .views-field-title{
-    display: inline-block;
-    float: right;
-    margin-right: 20%;
+    display: table-cell;
+    padding-left: 5px;
     vertical-align: middle;
-    margin-top: 10%;
     a{
       border-left: 3px solid $blue;
       color: $black;
-      font-size: 20px;
+      font-size: 18px;
       padding-left: 10px;
     }
   }
@@ -84,8 +83,40 @@
     }
   }
 }
-/*** About company hover efect ***/
-.block-views-blockabout-company-event-page-block-1:hover{
+
+/*** About location sidebar info ***/
+.block-views-blockabout-location-event-page-block-1{
+  max-width: 260px;
+  border: 2px solid $grey-border;
+  padding: 10px;
+  margin-bottom: 30px;
+  .views-field-field-location-image{
+    display: table-cell;
+    width:80px;
+  }
+  .views-field-title{
+    display: table-cell;
+    padding-left: 5px;
+    vertical-align: middle;
+    a{
+      border-left: 3px solid $blue;
+      color: $black;
+      font-size: 18px;
+      padding-left: 5px;
+    }
+  }
+  .views-field-view-node{
+    text-align: right;
+    padding-top: 10px;
+    a{
+      color: $black;
+      font-size: 18px;
+    }
+  }
+}
+/*** About company , about locationhover efect ***/
+.block-views-blockabout-company-event-page-block-1:hover,
+.block-views-blockabout-location-event-page-block-1:hover{
   .views-field-title{
     a{
       border-left: 3px solid $orange;
