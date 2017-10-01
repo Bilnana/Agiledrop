@@ -12,10 +12,12 @@
     }
   }
   .field--name-title{
-    margin-left: 35%;
+    display: block;
+    text-align: center;
   }
   .field--name-field-event-type-taxonomy{
     text-align: center;
+    margin-bottom: 20px;
     a{
       border-left: 3px solid $blue;
       padding-left:10px;
@@ -127,5 +129,13 @@
     a {
       color: $orange;
     }
+  }
+}
+/*** About h2 ***/
+.block-block-contentefc5fd55-884c-45f1-a8d9-4a12a2e87297{
+  h2:after{
+    content:"ORGANIZER & LOCATION";
+    display: block;
+    font-size: 20px;
   }
 }
