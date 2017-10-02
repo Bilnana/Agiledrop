@@ -77,9 +77,13 @@
       display: none;
     }
   }
+  /*** Top menu responsive icon ***/
   .top-menu{
     display: block;
     text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   .toggle-nav{
     display: block;
@@ -90,23 +94,30 @@
   .toggle-nav:hover{
     color: $grey;
   }
+
+  /*** Mobile style ***/
   .menu--main.style-mobile{
     color: $blue;
-    text-align: center;
-  }
-  .menu--main.style-mobile{
-
+    background-color: yellow;
     ul{
-      width: 50%;
-      background-color: red;
+      width: 100%;
+      display: block;
+      margin: auto;
     }
     li{
       display: block;
-
-      a{
-        color:$blue;
-      }
+    }
+    .menu-item{
+      margin: auto;
+      text-align: center;
     }
   }
+  //login menu
+  .menu--account{
+    display:block;
+    float: right;
 
+  }
+
+  //end media
 }
