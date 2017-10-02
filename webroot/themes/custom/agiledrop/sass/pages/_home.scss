@@ -98,9 +98,6 @@
 
     }
 }
-.featured-companies-home{
-  text-align: justify;
-}
 .companies-home-row{
   display: inline-block;
   max-width: 385px;
@@ -266,9 +263,40 @@
     .latest-event-item{
       margin-left: 0;
     }
-
+  }
+  //**Featured companies
+  .region-featured-bottom-second{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 12%;
+    overflow: hidden;
   }
 
+  .companies-home-row {
+    display: inline-block;
+    max-width: 320px;
+    margin-bottom: 3%;
+
+    .companies-home-logo {
+      float: none;
+      display: block;
+    }
+    .companies-home-title {
+      display: block;
+      float: none;
+      a {
+        color: $black;
+        font-weight: bold;
+        @include rem('font-size', 18px);
+
+      }
+    }
+    .companies-home-body {
+      display: block;
+      float: none;
+     // text-align: left;
+    }
+  }
 }
 
 
