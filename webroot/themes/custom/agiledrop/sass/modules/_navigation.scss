@@ -83,7 +83,7 @@
     text-align: center;
     width: 60%;
     margin-left: 20%;
-    margin-right: 20%;
+    //margin-right: 20%;
   }
   .toggle-nav{
     display: block;
@@ -94,29 +94,44 @@
   .toggle-nav:hover{
     color: $grey;
   }
+  .toggle-nav:active{
+    color: $blue;
+  }
 
   /*** Mobile style ***/
   .menu--main.style-mobile{
-    color: $blue;
-    background-color: yellow;
+    //background-color: yellow;
+
     ul{
       width: 100%;
       display: block;
       margin: auto;
-    }
-    li{
-      display: block;
-    }
-    .menu-item{
-      margin: auto;
       text-align: center;
     }
+    .menu-item{
+      display: block;
+      margin: auto;
+      padding-bottom: 5px;
+      padding-top:5px;
+      a{
+        color:$blue;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      a:hover, a:active{
+        color:$grey;
+      }
+    }
+
   }
   //login menu
   .menu--account{
+    color: $blue;
     display:block;
     float: right;
-
+    .menu-item{
+      margin-left: 0;
+    }
   }
 
   //end media
