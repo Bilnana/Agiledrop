@@ -64,4 +64,49 @@
     }
 
   }
+
+}
+.top-menu{
+  display: none;
+}
+
+
+@media (max-width: 640px){
+  .region-primary-menu {
+    .menu--main {
+      display: none;
+    }
+  }
+  .top-menu{
+    display: block;
+    text-align: center;
+  }
+  .toggle-nav{
+    display: block;
+    color: $blue;
+    font-weight: bold;
+    font-size:32px;
+  }
+  .toggle-nav:hover{
+    color: $grey;
+  }
+  .menu--main.style-mobile{
+    color: $blue;
+    text-align: center;
+  }
+  .menu--main.style-mobile{
+
+    ul{
+      width: 50%;
+      background-color: red;
+    }
+    li{
+      display: block;
+
+      a{
+        color:$blue;
+      }
+    }
+  }
+
 }

@@ -15,7 +15,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 70);
+        $tags = array("if" => 74);
         $filters = array();
         $functions = array();
 
@@ -57,12 +57,16 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
         // line 60
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "primary_menu", array()), "html", null, true));
         echo "
+                <div class=\"top-menu\" id=\"top-menu\">
+                    <a class=\"toggle-nav\" href=\"#\"><i class=\"fa fa-bars\" aria-hidden=\"true\"></i></a>
+                </div>
             </div>
         </div>
+
         <div class=\"layout-container\">
             <div class=\"banner\">
               ";
-        // line 65
+        // line 69
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "html", null, true));
         echo "
             </div>
@@ -70,14 +74,14 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
     </header>
 
     ";
-        // line 70
+        // line 74
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_top", array())) {
-            // line 71
+            // line 75
             echo "      <div class=\"featured-top\">
         <div class=\"featured-top__inner layout-container clearfix\">
           <div class=\"container\">
           ";
-            // line 74
+            // line 78
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_top", array()), "html", null, true));
             echo "
           </div>
@@ -85,60 +89,60 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
       </div>
     ";
         }
-        // line 79
+        // line 83
         echo "
     <div id=\"main-wrapper\" class=\"layout-container clearfix\">
         <div class=\"container\">
           ";
-        // line 82
+        // line 86
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())) {
-            // line 83
+            // line 87
             echo "            <aside class=\"sidebar-first\">
               <div class=\"sidebar-section\">
                   ";
-            // line 85
+            // line 89
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array()), "html", null, true));
             echo "
               </div>
             </aside>
           ";
         }
-        // line 89
+        // line 93
         echo "
             <section class=\"main-container\">
               <a id=\"main-content\"></a>
                 ";
-        // line 92
+        // line 96
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
         echo "
             </section>
 
           ";
-        // line 95
+        // line 99
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())) {
-            // line 96
+            // line 100
             echo "            <aside class=\"sidebar-second\">
               <div class=\"sidebar-section\">
                 ";
-            // line 98
+            // line 102
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()), "html", null, true));
             echo "
               </div>
             </aside>
           ";
         }
-        // line 102
+        // line 106
         echo "      </div>
 
         ";
-        // line 104
+        // line 108
         if ((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_first", array()) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_second", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_third", array()))) {
-            // line 105
+            // line 109
             echo "          <div class=\"featured-bottom\">
               <div class=\"layout-container-grey\">
                   <div class=\"container\">
                      ";
-            // line 108
+            // line 112
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_first", array()), "html", null, true));
             echo "
                   </div>
@@ -146,7 +150,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
               <div class=\"layout-container\">
                   <div class=\"container\">
                       ";
-            // line 113
+            // line 117
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_second", array()), "html", null, true));
             echo "
                   </div>
@@ -154,7 +158,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
               <div class=\"layout-container\">
                   <div class=\"container\">
                       ";
-            // line 118
+            // line 122
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_third", array()), "html", null, true));
             echo "
                   </div>
@@ -162,54 +166,54 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
           </div>
         ";
         }
-        // line 123
+        // line 127
         echo "    </div>
 
     <footer class=\"site-footer\">
       <div class=\"layout-container\">
         ";
-        // line 127
+        // line 131
         if ((((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_second", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_third", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fourth", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fifth", array()))) {
-            // line 128
+            // line 132
             echo "          <div class=\"site-footer__top layout-container clearfix\">
               <div class=\"container\">
                   ";
-            // line 130
+            // line 134
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()), "html", null, true));
             echo "
                   ";
-            // line 131
+            // line 135
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_second", array()), "html", null, true));
             echo "
                   ";
-            // line 132
+            // line 136
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_third", array()), "html", null, true));
             echo "
                   ";
-            // line 133
+            // line 137
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fourth", array()), "html", null, true));
             echo "
                   ";
-            // line 134
+            // line 138
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fifth", array()), "html", null, true));
             echo "
               </div>
           </div>
         ";
         }
-        // line 138
+        // line 142
         echo "        ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_six", array())) {
-            // line 139
+            // line 143
             echo "          <div class=\"site-footer__bottom layout-container\">
             ";
-            // line 140
+            // line 144
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_six", array()), "html", null, true));
             echo "
           </div>
         ";
         }
-        // line 143
+        // line 147
         echo "      </div>
     </footer>
   </div>
@@ -229,7 +233,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
 
     public function getDebugInfo()
     {
-        return array (  213 => 143,  207 => 140,  204 => 139,  201 => 138,  194 => 134,  190 => 133,  186 => 132,  182 => 131,  178 => 130,  174 => 128,  172 => 127,  166 => 123,  158 => 118,  150 => 113,  142 => 108,  137 => 105,  135 => 104,  131 => 102,  124 => 98,  120 => 96,  118 => 95,  112 => 92,  107 => 89,  100 => 85,  96 => 83,  94 => 82,  89 => 79,  81 => 74,  76 => 71,  74 => 70,  66 => 65,  58 => 60,  50 => 55,  43 => 50,);
+        return array (  217 => 147,  211 => 144,  208 => 143,  205 => 142,  198 => 138,  194 => 137,  190 => 136,  186 => 135,  182 => 134,  178 => 132,  176 => 131,  170 => 127,  162 => 122,  154 => 117,  146 => 112,  141 => 109,  139 => 108,  135 => 106,  128 => 102,  124 => 100,  122 => 99,  116 => 96,  111 => 93,  104 => 89,  100 => 87,  98 => 86,  93 => 83,  85 => 78,  80 => 75,  78 => 74,  70 => 69,  58 => 60,  50 => 55,  43 => 50,);
     }
 
     public function getSource()
@@ -294,8 +298,12 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
         <div class=\"layout-container\">
             <div class=\"container\">
               {{ page.primary_menu }}
+                <div class=\"top-menu\" id=\"top-menu\">
+                    <a class=\"toggle-nav\" href=\"#\"><i class=\"fa fa-bars\" aria-hidden=\"true\"></i></a>
+                </div>
             </div>
         </div>
+
         <div class=\"layout-container\">
             <div class=\"banner\">
               {{ page.header }}
