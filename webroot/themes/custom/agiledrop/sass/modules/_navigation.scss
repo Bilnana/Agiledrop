@@ -71,7 +71,7 @@
 }
 
 
-@media (max-width: 640px){
+@media (max-width: $screen-xs){ //** 420px
   .region-primary-menu {
     .menu--main {
       display: none;
