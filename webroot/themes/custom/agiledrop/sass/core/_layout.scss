@@ -104,7 +104,21 @@ $screen-lg: 1200px;*/
 
 
 @media (max-width: $screen-sm) {
+  .sidebar-first{
+    width: 100%;
+    display: block;
+    //background-color:red;
+  }
+  .sidebar-second{
+    width: 100%;
+    display: block;
+    //background-color: purple;
+  }
+  .banner-page{
+    .text-owerlay{
 
+    }
+  }
 
 
 
