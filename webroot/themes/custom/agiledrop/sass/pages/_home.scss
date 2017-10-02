@@ -64,12 +64,14 @@
     text-align: center;
     box-shadow: -5px 7px 4px -3px rgba(0,0,0,0.75);
   }
-  .latest-event-item:nth-of-type(*){
+  .latest-event-item:first-child{
     margin-left: 0;
+    @media (max-width: $screen-xs) {
+      margin: auto;
+      margin-bottom: 20px;
+    }
   }
-  .latest-event-img{
 
-  }
   .latest-event-title{
     a{
       color: $black;
@@ -185,7 +187,11 @@
 }
 
 
+
+
 /**** Media Queries ****/
+
+
 @media (max-width: $screen-xs) {
 
   //** Home inntro block
@@ -205,23 +211,34 @@
     max-width: 390px;
   }
 
-  //** Latest events home
-  .region-featured-bottom-first{
-    padding-top: 80px;
-    padding-bottom: 120px;
-  }
-  .latest-events{
-    text-align: justify;
+  //** Featured companies
+  .region-featured-bottom-second{
+    padding-top: 50px;
+    padding-bottom: 80px;
 
-    .latest-event-item{
+  }
+  .companies-home-row {
+    display: block;
+    max-width: 385px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  //** Latest events home
+  .latest-events {
+    text-align: justify;
+    overflow: hidden;
+
+    .latest-event-item {
       display: block;
       max-width: 270px;
       margin: auto;
+      margin-bottom: 20px;
     }
   }
 
-
-
+  //end media
 }
 
 @media (max-width: $screen-sm) {
