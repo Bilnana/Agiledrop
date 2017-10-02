@@ -53,7 +53,6 @@
   }
 }
 .latest-events{
-  text-align: justify;
 
   .latest-event-item{
     display: inline-block;
@@ -66,7 +65,7 @@
   }
   .latest-event-item:first-child{
     margin-left: 0;
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs) and (max-width: $screen-sm) {
       margin: auto;
       margin-bottom: 20px;
     }
@@ -192,12 +191,11 @@
 /**** Media Queries ****/
 
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-xs) { //** 420px
 
   //** Home inntro block
   .home-intro{
     display:block;
-    max-width:$screen-xs;
     a{
       color: $black;
       font-weight: bold;
@@ -208,27 +206,18 @@
   //** Sidebar home
   .sidebar-info{
     display: block;
-    max-width: 390px;
   }
 
   //** Featured companies
   .region-featured-bottom-second{
     padding-top: 50px;
     padding-bottom: 80px;
-
-  }
-  .companies-home-row {
-    display: block;
-    max-width: 385px;
-    margin: auto;
-    overflow: hidden;
-    margin-bottom: 20px;
   }
 
   //** Latest events home
   .latest-events {
     text-align: justify;
-    overflow: hidden;
+    //overflow: hidden;
 
     .latest-event-item {
       display: block;
@@ -237,13 +226,57 @@
       margin-bottom: 20px;
     }
   }
+  /***** Custum block with button link *****/
+  .t1{
+    display: none;
+  }
+  .t2{
+    display: none;
+  }
 
   //end media
 }
 
-@media (max-width: $screen-sm) {
+
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) { //** 768px
+  //** Home inntro block
+  .home-intro{
+    display:block;
+    padding-left: 12%;
+    padding-right: 12%;
+    a{
+      color: $black;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+  //** Sidebar info home
+  .sidebar-info{
+    display: block;
+    float: left;
+    padding-left: 12%;
+    max-width: 500px;
+  }
+  //** Latest events home-page
+  .region-featured-bottom-first{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 12%;
+    .latest-event-item{
+      margin-left: 0;
+    }
+
+  }
 
 }
+
+
+
+
+
+
+
 @media (max-width: $screen-md) {
 
 }
