@@ -1,10 +1,6 @@
-.events-teaser::before{
-  content: "FIND YOUR OWN";
-  @include rem('font-size', 18px);
-}
 
 .events-teaser{
-
+   // padding-bottom: 80px;
   .view-content{
     display: flex;
     flex-wrap: wrap;
@@ -31,8 +27,8 @@
   }
   .events-row:nth-child(5) {
     .views-field-field-event-image {
-      order: 2;
-    }
+        order:2
+      }
   }
 
 
@@ -81,8 +77,55 @@
 }
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) {
+  .events-teaser {
+    .view-content {
+      display: block;
+      text-align: center;
+    }
+    .events-row {
+      max-width: 720px;
+      background: grey;
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .event-image-teaser{
+      //margin:;
+      float: left;
+      display: block;
+    }
 
+    .views-field-field-event-start-date{
+      display: inline-block;
+      width: 50%;
+
+    }
+    .views-field-field-event-end-date{
+      display: inline-block;
+      width: 50%;
+    }
+    .views-field-body{
+      margin: 0;
+      display: inline-block;
+      width: 50%;
+    }
+    .views-field-title{
+      display: inline-block;
+      width: 50%;
+    }
+    .button-read{
+      display: inline-block;
+      width: 50%;
+    }
+
+    .views-field-view-node{
+      margin-top:40px;
+    }
+  }
 }
+
+
 @media (max-width: $screen-md) and (min-width: $screen-sm){
 
 }
