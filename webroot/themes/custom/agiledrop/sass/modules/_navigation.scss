@@ -69,6 +69,9 @@
 .top-menu{
   display: none;
 }
+.login{
+  display: none;
+}
 
 
 @media (max-width: $screen-xs){ //** 420px
@@ -103,7 +106,6 @@
 
   /*** Mobile style ***/
   .menu--main.style-mobile{
-    //background-color: yellow;
 
     ul{
       width: 100%;
@@ -126,27 +128,9 @@
     .menu-item:hover, .menu-item:active{
       background-color:$grey-border;
       a{
-        color:#2d5986;
+        color:$grey;
       }
     }
 
   }
-  .menu--account.style-mobile{
-    display: block;
-   /* .menu-item{
-      margin-left: 25px;
-      a{
-        @include button-blue;
-      }
-      a:hover, a:active{
-        @include button-hover;
-      }
-    }
-    .menu-item:first-child{
-      margin-left: 0;
-    }*/
-
-  }
-
-  //end media
 }
