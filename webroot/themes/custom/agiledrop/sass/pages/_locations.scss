@@ -3,15 +3,15 @@
   @include rem('font-size', 18px);
 }
 .location-teaser{
-  text-align: justify;
-  .view-content{display:block}
+  .view-content{
+    display:block
+  }
   .locations-row{
     background-color: $grey-border;
-    display: inline-block;
     vertical-align: top;
+    display: inline-block;
     max-width: 270px;
     margin-left:2.5%;
-    //padding-bottom: 6%;
     float: left;
     margin-bottom:2.5%;
 
@@ -33,7 +33,68 @@
   }
   .locations-row:nth-child(4n+1){
     margin-left:0;
+    @media (max-width: $screen-xs) { //420px
+      margin-left: auto;
+    }
   }
 
 }
+
+
+/************* Media Queries *****************/
+
+@media (max-width: $screen-xs) {  //420px
+  .location-teaser{
+    h1{
+
+    }
+    .view-content{
+      display:block;
+
+    }
+    .locations-row{
+      background-color: $grey-border;
+      display: block;
+      max-width: 270px;
+      float: none;
+      padding-bottom: 20px;
+      margin: 20px auto 0 auto;
+    }
+
+  }
+}
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) {  //768px
+
+  .location-teaser{
+    padding-left: 10%;
+    .locations-row{
+      background-color: $grey-border;
+      display: inline-block;
+      max-width: 270px;
+      margin-left:2.5%;
+      float: left;
+      margin-bottom:2.5%;
+
+    }
+
+  }
+}
+
+@media (max-width: $screen-md) and (min-width: $screen-sm){   //992px
+  .location-teaser{
+    padding-left: 10%;
+    .locations-row{
+      background-color: $grey-border;
+      display: inline-block;
+      max-width: 270px;
+      margin-left:2.5%;
+      float: left;
+      margin-bottom:2.5%;
+
+    }
+
+  }
+}
+
 
