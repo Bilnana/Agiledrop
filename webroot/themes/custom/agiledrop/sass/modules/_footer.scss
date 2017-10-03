@@ -95,7 +95,7 @@
     }
     .region-footer-second{
       display: table-cell;
-      max-width: 310px;
+      max-width: 280px;
       a{
         font-size: 20px;
       }
@@ -137,14 +137,13 @@
 
 
 
-@media (max-width: $screen-sm)  {
+@media (max-width: $screen-sm) and (min-width: $screen-xs)  {
 
   .site-footer__top {
-     background-color: yellow;
      text-align: center;
     .region-footer-first {
-      display: block;
-      max-width: 740px;
+      display: inline-block;
+      max-width: 50px;
       padding-left: 0;
       //padding-left:5%;
       text-align: right;
@@ -152,19 +151,16 @@
     .region-footer-second {
       display: inline-block;
       max-width: 250px;
-      margin: auto;
       text-align: left;
     }
     .region-footer-third {
       display: inline-block;
       max-width: 250px;
-      margin: auto;
       text-align: left;
     }
     .region-footer-fourth {
       display: inline-block;
       max-width: 250px;
-      margin: auto;
       text-align: left;
     }
     .region-footer-fifth {
@@ -172,9 +168,27 @@
       max-width: 760px;
       padding-right: 0;
       margin: auto;
+      text-align:left ;
+
+      h4{
+        text-align:center ;
+      }
+
       input{
         padding:10px 25px;
       }
+    }
+  }
+  .region-footer-six{
+    img{
+      width:250px;
+    }
+    .f1{
+      position: absolute;
+      top: -143px;
+      left: 0;
+      z-index: -5;
+
     }
   }
 }
