@@ -27,7 +27,7 @@
   }
   .events-row:nth-child(5) {
     .views-field-field-event-image {
-        order:2
+        order:2;
       }
   }
 
@@ -73,6 +73,28 @@
 /************* Media Queries *****************/
 
 @media (max-width: $screen-xs) {
+  .events-teaser {
+    // padding-bottom: 80px;
+    .view-content {
+      display: block;
+      //flex-wrap: wrap;
+     // justify-content: space-between;
+    }
+    .events-row {
+      max-width: 360px;
+      background: grey;
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 20px;
+
+    }
+    .views-field-view-node{
+      padding-bottom:40px;
+      margin-bottom: 0;
+    }
+
+  }
 
 }
 
