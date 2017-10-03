@@ -44,3 +44,72 @@
     right: 5%;
   }
 }
+
+
+/************* Media Queries *****************/
+
+@media (max-width: $screen-xs) {
+  .region-top-block{
+    display: block;
+    .onboard{
+      display:block;
+      float: none;
+    }
+    .phone{
+      display:block;
+      float: none;
+      margin-right: 0;
+    }
+    .mail{
+      display:block;
+      float: none;
+    }
+  }
+
+  //**  Header slider
+  .banner{
+    position:relative;
+    text-align: center;
+
+    .caption{
+      color: $white;
+      position: absolute;
+      vertical-align: middle;
+      top: 20%;
+      left:5%;
+      right: 5%;
+      h1{
+        font-size: 1em;
+      }
+      p{
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) {
+
+  //** Header slider
+  .banner{
+
+    .caption{
+      color: $white;
+      position: absolute;
+      vertical-align: middle;
+      top: 30%;
+      left:5%;
+      right: 5%;
+      h1{
+        font-size: 1.4em;
+      }
+      p{
+        font-size: 1em;
+      }
+    }
+  }
+
+}
+@media (max-width: $screen-md) and (min-width: $screen-sm){
+
+}
