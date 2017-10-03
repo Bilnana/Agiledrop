@@ -145,11 +145,10 @@
   .site-footer__top {
      text-align: center;
     .region-footer-first {
-      display: inline-block;
-      max-width: 50px;
+      display:block;
       padding-left: 0;
-      //padding-left:5%;
-      text-align: right;
+      padding-left:0;
+      text-align: center;
     }
     .region-footer-second {
       display: inline-block;
@@ -202,7 +201,9 @@
   .site-footer__top {
     text-align: center;
     .region-footer-first {
-      display: inline-block;
+      display:inline-block;
+      float: left;
+      padding-top: 20px;
       max-width: 50px;
       padding-left: 0;
       //padding-left:5%;
@@ -210,12 +211,12 @@
     }
     .region-footer-second {
       display: inline-block;
-      max-width: 250px;
+      max-width: 100px;
       text-align: left;
     }
     .region-footer-third {
       display: inline-block;
-      max-width: 250px;
+      max-width: 200px;
       text-align: left;
     }
     .region-footer-fourth {
