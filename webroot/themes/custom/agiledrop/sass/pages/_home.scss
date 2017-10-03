@@ -274,7 +274,7 @@
 
   .companies-home-row {
     display: inline-block;
-    max-width: 320px;
+    max-width: 300px;
     margin-bottom: 3%;
 
     .companies-home-logo {
@@ -294,9 +294,43 @@
     .companies-home-body {
       display: block;
       float: none;
+      width:80%;
      // text-align: left;
     }
   }
+
+  //** Custum block with button link
+  .block-block-content3d674abc-ec60-4786-93eb-8f628e0c6463{
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+
+  }
+  .t1{
+    position: absolute;
+    right: 100px;
+    bottom: -129px;
+    z-index: 1;
+  }
+  .t2{
+    position: absolute;
+    bottom: -129px;
+    right: 0;
+  }
+
+  //** Custum block Free service
+  .region-featured-bottom-third {
+    overflow: hidden;
+
+    .free-service {
+      padding-top: 50px;
+      padding-bottom: 80px;
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+  }
+
 }
 
 
