@@ -14,7 +14,6 @@
   color: $black;
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: justify;
 
   a{
     text-decoration:none;
@@ -75,5 +74,127 @@
     z-index: 10;
 
   }
+
+}
+
+
+
+/************* Media Queries *****************/
+
+@media (max-width: $screen-xs){
+  .site-footer__top {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+    .region-footer-first{
+      display: block;
+      padding-left: 0;
+      margin-left: 10%;
+    }
+    .region-footer-second{
+      display: table-cell;
+      max-width: 200px;
+      a{
+        font-size: 20px;
+      }
+      h4{
+        margin-left: 8%;
+      }
+    }
+    .region-footer-third{
+      display: table-cell;
+      max-width: 200px;
+      a{
+        font-size: 20px;
+      }
+    }
+    .region-footer-fourth{
+      display: block;
+      margin: auto;
+    }
+    .region-footer-fifth{
+      display: block;
+      margin: auto;
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+  .region-footer-six{
+    .f1{
+     display: none;
+
+    }
+    .f2{
+     display: none;
+
+    }
+  }
+
+}
+
+
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs)  {
+
+  .site-footer__top {
+     text-align: center;
+    .region-footer-first {
+      display: inline-block;
+      max-width: 50px;
+      padding-left: 0;
+      //padding-left:5%;
+      text-align: right;
+    }
+    .region-footer-second {
+      display: inline-block;
+      max-width: 250px;
+      text-align: left;
+    }
+    .region-footer-third {
+      display: inline-block;
+      max-width: 250px;
+      text-align: left;
+    }
+    .region-footer-fourth {
+      display: inline-block;
+      max-width: 250px;
+      text-align: left;
+    }
+    .region-footer-fifth {
+      display: block;
+      max-width: 760px;
+      padding-right: 0;
+      margin: auto;
+      text-align:left ;
+
+      h4{
+        text-align:center ;
+      }
+
+      input{
+        padding:10px 25px;
+      }
+    }
+  }
+  .region-footer-six{
+    img{
+      width:250px;
+    }
+    .f1{
+      position: absolute;
+      top: -143px;
+      left: 0;
+      z-index: -5;
+
+    }
+  }
+}
+
+
+
+@media (max-width: $screen-md) and (min-width: $screen-sm) {
 
 }

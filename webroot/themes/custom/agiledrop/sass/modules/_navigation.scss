@@ -76,20 +76,23 @@
     .menu--main {
       display: none;
     }
+    //login menu
+    .menu--account{
+      display: none;
+
+    }
   }
   /*** Top menu responsive icon ***/
   .top-menu{
     display: block;
     text-align: center;
-    width: 60%;
-    margin-left: 20%;
-    //margin-right: 20%;
   }
   .toggle-nav{
     display: block;
     color: $blue;
     font-weight: bold;
     font-size:32px;
+    float: right;
   }
   .toggle-nav:hover{
     color: $grey;
@@ -124,15 +127,7 @@
     }
 
   }
-  //login menu
-  .menu--account{
-    color: $blue;
-    display:block;
-    float: right;
-    .menu-item{
-      margin-left: 0;
-    }
-  }
+
 
   //end media
 }

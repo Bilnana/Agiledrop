@@ -142,18 +142,20 @@
 .t1{
   position: absolute;
   right: 100px;
-  bottom: -129px;
+  bottom: -120px;
   z-index: 1;
 }
 .t2{
   position: absolute;
-  bottom: -129px;
+  bottom: -120px;
   right: 0;
 }
 
 /***** Custum block Free service *****/
 .region-featured-bottom-third{
   text-align: center;
+  border-top: 1px solid $grey-border;
+  border-bottom: 1px solid $grey-border;
 
   .h1{
     @include rem('font-size', 36px);
@@ -274,7 +276,7 @@
 
   .companies-home-row {
     display: inline-block;
-    max-width: 320px;
+    max-width: 300px;
     margin-bottom: 3%;
 
     .companies-home-logo {
@@ -294,9 +296,28 @@
     .companies-home-body {
       display: block;
       float: none;
-     // text-align: left;
+      width:80%;
     }
   }
+
+  //** Custum block with button link
+  .block-block-content3d674abc-ec60-4786-93eb-8f628e0c6463{
+   text-align: center;
+
+  }
+
+
+  //** Custum block Free service
+  .region-featured-bottom-third {
+
+    .free-service {
+      padding-top: 50px;
+      padding-bottom: 80px;
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+  }
+
 }
 
 
