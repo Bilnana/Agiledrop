@@ -69,6 +69,9 @@
 .top-menu{
   display: none;
 }
+.login{
+  display: none;
+}
 
 
 @media (max-width: $screen-xs){ //** 420px
@@ -103,7 +106,6 @@
 
   /*** Mobile style ***/
   .menu--main.style-mobile{
-    //background-color: yellow;
 
     ul{
       width: 100%;
@@ -116,18 +118,19 @@
       margin: auto;
       padding-bottom: 5px;
       padding-top:5px;
+      border-bottom: 1px solid $grey-border;
       a{
         color:$blue;
         font-size: 24px;
         font-weight: bold;
       }
-      a:hover, a:active{
+    }
+    .menu-item:hover, .menu-item:active{
+      background-color:$grey-border;
+      a{
         color:$grey;
       }
     }
 
   }
-
-
-  //end media
 }

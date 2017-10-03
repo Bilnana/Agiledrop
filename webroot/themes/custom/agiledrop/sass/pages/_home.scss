@@ -215,8 +215,6 @@
 
   //** Latest events home
   .latest-events {
-    text-align: justify;
-    //overflow: hidden;
 
     .latest-event-item {
       display: block;
@@ -261,9 +259,10 @@
   .region-featured-bottom-first{
     padding-top: 50px;
     padding-bottom: 80px;
-    padding-left: 12%;
+    text-align: center;
     .latest-event-item{
       margin-left: 0;
+      text-align: left;
     }
   }
   //**Featured companies
@@ -321,11 +320,85 @@
 }
 
 
+@media (max-width: $screen-md) and (min-width: $screen-sm) {
+  //** Home inntro block
+  .home-intro{
+    display:block;
+    padding-left: 12%;
+    padding-right: 12%;
+    a{
+      color: $black;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+  //** Sidebar info home
+  .sidebar-info{
+    display: block;
+    float: left;
+    padding-left: 12%;
+    max-width: 500px;
+  }
+  //** Latest events home-page
+  .region-featured-bottom-first{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+    .latest-event-item{
+      margin-left: 0;
+      text-align: left;
+    }
+  }
+  //**Featured companies
+  .region-featured-bottom-second{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 12%;
+    overflow: hidden;
+  }
+
+  .companies-home-row {
+    display: inline-block;
+    max-width: 300px;
+    margin-bottom: 3%;
+
+    .companies-home-logo {
+      float: none;
+      display: block;
+    }
+    .companies-home-title {
+      display: block;
+      float: none;
+      a {
+        color: $black;
+        font-weight: bold;
+        @include rem('font-size', 18px);
+
+      }
+    }
+    .companies-home-body {
+      display: block;
+      float: none;
+      width:80%;
+    }
+  }
+
+  //** Custum block with button link
+  .block-block-content3d674abc-ec60-4786-93eb-8f628e0c6463{
+    text-align: center;
+
+  }
 
 
+  //** Custum block Free service
+  .region-featured-bottom-third {
 
-
-
-@media (max-width: $screen-md) {
+    .free-service {
+      padding-top: 50px;
+      padding-bottom: 80px;
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+  }
 
 }
