@@ -46,6 +46,9 @@
     display: table-cell;
     width: 305px;
     padding-right: 50px;
+    input[type=go] {
+      @include button-go;
+    }
   }
 }
 
@@ -121,8 +124,9 @@
         font-size: 20px;
       }
       input{
-        padding:5px 10px;
+        padding: 15px 20px;
       }
+
     }
   }
   .region-footer-six{
@@ -175,9 +179,11 @@
       h4{
         text-align:center ;
       }
-
       input{
-        padding:10px 25px;
+        padding: 10px;
+      }
+      input[type=go]{
+        padding: 10px;
       }
     }
   }
