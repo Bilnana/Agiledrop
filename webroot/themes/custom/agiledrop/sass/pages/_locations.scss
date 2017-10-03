@@ -64,7 +64,24 @@
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) {  //768px
 
+  .location-teaser{
+    .view-content{
+      display:block;
+      padding-left: 10%;
+    }
+    .locations-row{
+      background-color: $grey-border;
+      display: inline-block;
+      max-width: 270px;
+      margin-left:2.5%;
+      float: left;
+      margin-bottom:2.5%;
+
+    }
+
+  }
 }
+
 @media (max-width: $screen-md) and (min-width: $screen-sm){   //992px
 
 }
