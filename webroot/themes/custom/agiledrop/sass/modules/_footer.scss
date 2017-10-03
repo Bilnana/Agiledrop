@@ -14,7 +14,6 @@
   color: $black;
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: justify;
 
   a{
     text-decoration:none;
@@ -26,25 +25,25 @@
   }
 
   .region-footer-first{
-    display: block;
+    display: table-cell;
     width:195px;
     padding-left: 50px;
   }
   .region-footer-second{
-    display: block;
+    display: table-cell;
     width: 195px;
   }
   .region-footer-third{
-    display: block;
+    display: table-cell;
     width: 195px;
     color: $black;
   }
   .region-footer-fourth{
-    display: block;
+    display: table-cell;
     width: 285px;
   }
   .region-footer-fifth{
-    display: block;
+    display: table-cell;
     width: 305px;
     padding-right: 50px;
   }
@@ -82,7 +81,7 @@
 
 /************* Media Queries *****************/
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-xs){
   .site-footer__top {
     display: block;
     padding-top: 25px;
@@ -138,9 +137,50 @@
 
 
 
-@media (max-width: $screen-sm) and (min-width: $screen-xs) {
+@media (max-width: $screen-sm)  {
 
+  .site-footer__top {
+     background-color: yellow;
+     text-align: center;
+    .region-footer-first {
+      display: block;
+      max-width: 740px;
+      padding-left: 0;
+      //padding-left:5%;
+      text-align: right;
+    }
+    .region-footer-second {
+      display: inline-block;
+      max-width: 250px;
+      margin: auto;
+      text-align: left;
+    }
+    .region-footer-third {
+      display: inline-block;
+      max-width: 250px;
+      margin: auto;
+      text-align: left;
+    }
+    .region-footer-fourth {
+      display: inline-block;
+      max-width: 250px;
+      margin: auto;
+      text-align: left;
+    }
+    .region-footer-fifth {
+      display: block;
+      max-width: 760px;
+      padding-right: 0;
+      margin: auto;
+      input{
+        padding:10px 25px;
+      }
+    }
+  }
 }
+
+
+
 @media (max-width: $screen-md) and (min-width: $screen-sm) {
 
 }
