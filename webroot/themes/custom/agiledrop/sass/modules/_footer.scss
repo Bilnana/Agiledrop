@@ -26,25 +26,25 @@
   }
 
   .region-footer-first{
-    display: table-cell;
+    display: block;
     width:195px;
     padding-left: 50px;
   }
   .region-footer-second{
-    display: table-cell;
+    display: block;
     width: 195px;
   }
   .region-footer-third{
-    display: table-cell;
+    display: block;
     width: 195px;
     color: $black;
   }
   .region-footer-fourth{
-    display: table-cell;
+    display: block;
     width: 285px;
   }
   .region-footer-fifth{
-    display: table-cell;
+    display: block;
     width: 305px;
     padding-right: 50px;
   }
@@ -75,5 +75,62 @@
     z-index: 10;
 
   }
+
+}
+
+
+
+/************* Media Queries *****************/
+
+@media (max-width: $screen-xs) {
+  .site-footer__top {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+    .region-footer-first{
+      display: block;
+      padding-left: 0;
+      margin-left: 10%;
+    }
+    .region-footer-second{
+      display: table-cell;
+      max-width: 310px;
+      a{
+        font-size: 20px;
+      }
+      h4{
+        margin-left: 8%;
+      }
+    }
+    .region-footer-third{
+      display: table-cell;
+      max-width: 310px;
+      a{
+        font-size: 20px;
+      }
+    }
+    .region-footer-fourth{
+      display: block;
+      margin: auto;
+    }
+    .region-footer-fifth{
+      display: block;
+      margin: auto;
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+
+}
+
+
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) {
+
+}
+@media (max-width: $screen-md) and (min-width: $screen-sm) {
 
 }
