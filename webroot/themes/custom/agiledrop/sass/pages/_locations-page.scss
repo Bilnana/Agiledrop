@@ -131,3 +131,202 @@
     font-size: 16px;
   }
 }
+
+
+
+
+
+/************* Media Queries *****************/
+
+@media (max-width: $screen-xs) and (min-width: 320px) {
+
+  //** Location full view
+  .node--type-locations.node--view-mode-full{
+    max-width: 80%;
+    margin: 0 auto;
+
+
+    .field--name-body{
+      max-width:80%;
+      margin-bottom: 20px;
+    }
+  }
+  //**Sidebar view
+  .block-views-blockupcoming-events-location-page-block-1{
+    h2{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .view-upcoming-events-location-page{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .views-row{
+
+    }
+  }
+
+
+  //** Location image
+  .field--name-field-location-image{
+    float: none;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  //** Gmap
+  .field--name-field-location-map {
+    max-width: 320px;
+
+    p {
+      display:block;
+      width: 80%;
+      padding-left: 0;
+      border-left: none;
+      // vertical-align: top;
+    }
+    &::before {
+      display: none;
+    }
+    iframe {
+      display:block;
+      float: none;
+      width: 100%;
+    }
+  }
+
+  //** Equipment
+  .field--name-field-location-taxonomy{
+    display:block;
+    float: none;
+    width: 100%;
+  }
+
+  //** Blocks with info
+  .field--name-field-location-phone-number,
+  .field--name-field-location-website,
+  .field--name-field-location-email{
+    max-width:240px;
+    a{
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
+
+  //** Location full view
+  .node--type-locations.node--view-mode-full{
+    max-width: 80%;
+    margin: 0 auto;
+
+  }
+
+  //** Equipment
+  .field--name-field-location-taxonomy{
+    display:block;
+    float: none;
+    width: 60%;
+  }
+
+  //** Sidebar event
+  .block-views-blockupcoming-events-location-page-block-1
+    h2{
+     max-width: 80%;
+     margin: 0 auto;
+    }
+    .view-upcoming-events-location-page{
+      max-width: 80%;
+      margin: 0 auto;
+  }
+    .views-row {
+      display: inline-block;
+      margin: auto;
+    }
+  }
+
+  //** G-map
+  .field--name-field-location-map{
+    max-width: 80%;
+
+    p {
+      display:block;
+      width: 100%;
+      padding-left: 0;
+      border-left: none;
+    }
+    &::before {
+      display: none;
+    }
+    iframe {
+      display:block;
+      float: none;
+    }
+  }
+
+
+@media (max-width: $screen-md) and (min-width: $screen-sm){ //992px
+  //** Location full view
+  .node--type-locations.node--view-mode-full{
+    max-width: 80%;
+    margin: 0 auto;
+
+  }
+  //** Equipment
+  .field--name-field-location-taxonomy{
+    display:block;
+    float: none;
+    width: 400px;
+  }
+
+  //** Sidebar event
+  .block-views-blockupcoming-events-location-page-block-1 {
+    h2{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .view-upcoming-events-location-page{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .views-row {
+      display: inline-block;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: $screen-lg) and (min-width: $screen-md) { //1200px
+  //** Location full view
+  .node--type-locations.node--view-mode-full{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: red;
+  }
+
+  //** Equipment
+  .field--name-field-location-taxonomy{
+    display:block;
+    float: none;
+    width: 400px;
+  }
+
+  //** Sidebar event
+  .block-views-blockupcoming-events-location-page-block-1 {
+    h2{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .view-upcoming-events-location-page{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .views-row {
+      display: inline-block;
+      margin: auto;
+    }
+  }
+}
