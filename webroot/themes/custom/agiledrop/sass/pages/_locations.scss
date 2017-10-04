@@ -36,6 +36,9 @@
     @media (max-width: $screen-xs) { //420px
       margin-left: 2.5%;
     }
+    @media (max-width: $screen-sm) and (min-width: $screen-xs) { //420px
+      margin-left: 2.5%;
+    }
   }
   }
 
@@ -57,7 +60,7 @@
       .locations-row {
         background-color: $grey-border;
         display:inline-block;
-        max-width: 360px;
+        min-width: 290px;
         float: none;
         margin: auto;
       }

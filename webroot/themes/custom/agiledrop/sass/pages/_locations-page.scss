@@ -132,18 +132,78 @@
   }
 }
 
+
+
+
+
 /************* Media Queries *****************/
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-xs) and (min-width: 320px) {
+  .node--type-locations.node--view-mode-full{
+    max-width: 100%;
 
+    .block-views-blockupcoming-events-location-page-block-1{
+      .views-row{
+        max-width: 80%;
+      }
+    }
+    .field--name-body{
+      max-width:80%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .field--name-field-location-image{
+    float: none;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  //** Gmap
+  .field--name-field-location-map {
+    max-width: 80%;
+
+    p {
+      display:block;
+      width: 80%;
+      padding-left: 0;
+      border-left: none;
+      // vertical-align: top;
+    }
+    &::before {
+      display: none;
+    }
+    iframe {
+      display:block;
+      float: none;
+    }
+  }
+
+  //** Equipment
+  .field--name-field-location-taxonomy{
+    display:block;
+    float: none;
+    width: 60%;
+  }
+
+  //** Blocks with info
+  .field--name-field-location-phone-number,
+  .field--name-field-location-email,
+  .field--name-field-location-website{
+    width:80%;
+    //margin: 0 auto 30px auto;
+  }
 }
+
+
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
   //** Equipment
   .field--name-field-location-taxonomy{
     display:block;
     float: none;
-    width: 400px;
+    width: 60%;
   }
 
   //** Sidebar event
@@ -156,7 +216,7 @@
 
   //** G-map
   .field--name-field-location-map{
-    max-width: 540px;
+    max-width: 80%;
 
     p {
       display:block;

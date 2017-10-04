@@ -44,7 +44,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
   <div id=\"page\">
     <header id=\"header\" class=\"header\">
       <div class=\"layout-container-grey\">
-          <div class=\"container\">
+          <div class=\"wraper-container\">
               ";
         // line 55
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "top_block", array()), "html", null, true));
@@ -52,7 +52,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
           </div>
       </div>
         <div class=\"layout-container\">
-            <div class=\"container\">
+            <div class=\"wraper-container\">
               ";
         // line 60
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "primary_menu", array()), "html", null, true));
@@ -79,7 +79,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
             // line 75
             echo "      <div class=\"featured-top\">
         <div class=\"featured-top__inner layout-container clearfix\">
-          <div class=\"container\">
+          <div class=\"wraper-container\">
           ";
             // line 78
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_top", array()), "html", null, true));
@@ -92,7 +92,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
         // line 83
         echo "
     <div id=\"main-wrapper\" class=\"layout-container clearfix\">
-        <div class=\"container\">
+        <div class=\"wraper-container\">
           ";
         // line 86
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())) {
@@ -140,7 +140,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
             // line 109
             echo "          <div class=\"featured-bottom\">
               <div class=\"layout-container-grey\">
-                  <div class=\"container\">
+                  <div class=\"wraper-container\">
                      ";
             // line 112
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_first", array()), "html", null, true));
@@ -148,7 +148,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
                   </div>
               </div>
               <div class=\"layout-container\">
-                  <div class=\"container\">
+                  <div class=\"wraper-container\">
                       ";
             // line 117
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_second", array()), "html", null, true));
@@ -156,7 +156,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
                   </div>
               </div>
               <div class=\"layout-container\">
-                  <div class=\"container\">
+                  <div class=\"wraper-container\">
                       ";
             // line 122
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_bottom_third", array()), "html", null, true));
@@ -176,7 +176,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
         if ((((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_second", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_third", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fourth", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fifth", array()))) {
             // line 132
             echo "          <div class=\"site-footer__top layout-container clearfix\">
-              <div class=\"container\">
+              <div class=\"wraper-container\">
                   ";
             // line 134
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()), "html", null, true));
@@ -291,12 +291,12 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
   <div id=\"page\">
     <header id=\"header\" class=\"header\">
       <div class=\"layout-container-grey\">
-          <div class=\"container\">
+          <div class=\"wraper-container\">
               {{ page.top_block}}
           </div>
       </div>
         <div class=\"layout-container\">
-            <div class=\"container\">
+            <div class=\"wraper-container\">
               {{ page.primary_menu }}
                 <div class=\"top-menu\" id=\"top-menu\">
                     <a class=\"toggle-nav\" href=\"#\"><i class=\"fa fa-bars\" aria-hidden=\"true\"></i></a>
@@ -314,7 +314,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
     {% if page.featured_top %}
       <div class=\"featured-top\">
         <div class=\"featured-top__inner layout-container clearfix\">
-          <div class=\"container\">
+          <div class=\"wraper-container\">
           {{ page.featured_top }}
           </div>
         </div>
@@ -322,7 +322,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
     {% endif %}
 
     <div id=\"main-wrapper\" class=\"layout-container clearfix\">
-        <div class=\"container\">
+        <div class=\"wraper-container\">
           {% if page.sidebar_first %}
             <aside class=\"sidebar-first\">
               <div class=\"sidebar-section\">
@@ -348,17 +348,17 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
         {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
           <div class=\"featured-bottom\">
               <div class=\"layout-container-grey\">
-                  <div class=\"container\">
+                  <div class=\"wraper-container\">
                      {{ page.featured_bottom_first }}
                   </div>
               </div>
               <div class=\"layout-container\">
-                  <div class=\"container\">
+                  <div class=\"wraper-container\">
                       {{ page.featured_bottom_second }}
                   </div>
               </div>
               <div class=\"layout-container\">
-                  <div class=\"container\">
+                  <div class=\"wraper-container\">
                       {{ page.featured_bottom_third }}
                   </div>
               </div>
@@ -370,7 +370,7 @@ class __TwigTemplate_35d4691c910396dbfc2a35e9415ffb589d66edc2ad73623a0b2f2331d6a
       <div class=\"layout-container\">
         {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer_fifth %}
           <div class=\"site-footer__top layout-container clearfix\">
-              <div class=\"container\">
+              <div class=\"wraper-container\">
                   {{ page.footer_first }}
                   {{ page.footer_second }}
                   {{ page.footer_third }}
