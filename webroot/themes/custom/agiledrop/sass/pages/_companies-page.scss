@@ -139,6 +139,12 @@
 /************* Media Queries *****************/
 
 @media (max-width: $screen-xs) { //420px
+  .node--type-companies.node--view-mode-full{
+    //max-width: 840px;
+   margin: auto;
+
+  }
+  //** Fields information
   .field--name-field-company-website,
   .field--name-field-company-taxsonomy,
   .field--name-field-company-email,
@@ -158,7 +164,6 @@
   //map
   .field--name-field-company-map {
     max-width: 340px;
-    ////////
 
     p {
       display:block;
@@ -180,37 +185,62 @@
   .block-views-blocksidebar-events-companies-page-block-1 {
     .views-row {
       max-width:380px;
+      margin: 0 auto 30px auto;
+
     }
   }
 }
 
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
-  .field--name-field-company-website{
-    margin-left: 0;
+  .node--type-companies.node--view-mode-full{
+    //max-width: 840px;
+    margin: auto;
+
   }
-  .field--name-field-company-email{
+  //** Fields information
+  .field--name-field-company-website,
+  .field--name-field-company-taxsonomy,
+  .field--name-field-company-email,
+  .field--name-field-company-telephone{
+    max-width: 720px;
     margin-left: 0;
   }
 
   //body
   .node--type-companies.node--view-mode-full{
     .field--name-body{
-      max-width: 760px;
+      max-width: 720px;
     }
 
   }
 
   //map
   .field--name-field-company-map {
-   max-width: 720px;
+    max-width: 720px;
+
+    p {
+      display:block;
+      width: 100%;
+      padding-left: 0;
+      border-left: none;
+    }
+    &::before {
+      display: none;
+    }
+    iframe {
+      display:block;
+      float: none;
+    }
   }
 
   //events
   .block-views-blocksidebar-events-companies-page-block-1 {
     .views-row {
       display: inline-block;
-      margin: auto;
+      max-width:260px;
+      margin: 0 auto 30px auto;
+
     }
   }
 }

@@ -40,7 +40,7 @@ body{
 }
 
 .sidebar-first{
-  width: 280px;
+  max-width: 280px;
   display: inline-block;
   //background-color:red;
   float: left;
@@ -84,12 +84,12 @@ $screen-lg: 1200px;*/
 
 @media (max-width: $screen-xs) {
   .sidebar-first{
-    width: 100%;
+    max-width: $screen-xs;
     display: block;
     //background-color:red;
   }
   .sidebar-second{
-    width: 100%;
+    max-width: $screen-xs;
     display: block;
     //background-color: purple;
   }
@@ -110,14 +110,25 @@ $screen-lg: 1200px;*/
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) {
   .sidebar-first{
-    width: 100%;
+    max-width:  $screen-sm;
     display: block;
-    //background-color:red;
+    float: none;
   }
   .sidebar-second{
-    width: 100%;
+    max-width:  $screen-sm;
     display: block;
-    //background-color: purple;
+    float: none;
+  }
+
+  .sidebar-one .main-container{
+    max-width:  $screen-sm;
+    display: inline-block;
+
+  }
+
+  .sidebar-none .main-container{
+    width:  $screen-sm;
+    //background-color:green;
   }
   .banner-page{
     .text-owerlay{
@@ -135,7 +146,37 @@ $screen-lg: 1200px;*/
 
 }
 @media (max-width: $screen-md) and (min-width: $screen-sm) {
+  .sidebar-first{
+    max-width:  $screen-md;
+    display: block;
+    float: none;
+  }
+  .sidebar-second{
+    max-width:  $screen-md;
+    display: block;
+    float: none;
+  }
 
+  .sidebar-one .main-container{
+    max-width:  $screen-md;
+    display: inline-block;
+
+  }
+
+  .sidebar-none .main-container{
+    width:  $screen-md;
+  }
+  .banner-page{
+    .text-owerlay{
+      top: 5%;
+      h1{
+        font-size: 1.2em;
+      }
+      p{
+        font-size: 0.8em;
+      }
+    }
+  }
   .banner-page {
     .text-owerlay {
       top: 10%;
