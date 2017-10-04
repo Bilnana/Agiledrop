@@ -139,55 +139,47 @@
 /************* Media Queries *****************/
 
 @media (max-width: $screen-xs) { //420px
-  .field--name-field-company-website{
-    @include field;
-    color: $grey-border;
-
-    a{
-      @include link;
-    }
-
-    &::before {
-      content: "\f2b5";
-      font-family: FontAwesome;
-      @include pseudoPos;
-
-    }
-    margin-left: 0;
-  }
-  .field--name-field-company-email{
-    @include field;
-    color: $grey-border;
-
-    a{
-      @include link;
-    }
-
-    &::before {
-      content: "\f000";
-      font-family: FontAwesome;
-      @include pseudoPos;
-    }
+  .field--name-field-company-website,
+  .field--name-field-company-taxsonomy,
+  .field--name-field-company-email,
+  .field--name-field-company-telephone{
+    max-width: 340px;
     margin-left: 0;
   }
 
   //body
   .node--type-companies.node--view-mode-full{
     .field--name-body{
-      max-width: 380px;
+      max-width: 340px;
     }
 
   }
 
   //map
   .field--name-field-company-map {
-    max-width: 380px;
+    max-width: 340px;
+    ////////
+
+    p {
+      display:block;
+      width: 100%;
+      padding-left: 0;
+      border-left: none;
+     // vertical-align: top;
+    }
+    &::before {
+    display: none;
+    }
+    iframe {
+      display:block;
+      float: none;
+    }
   }
 
   //events
   .block-views-blocksidebar-events-companies-page-block-1 {
     .views-row {
-
+      max-width:380px;
     }
   }
 }
