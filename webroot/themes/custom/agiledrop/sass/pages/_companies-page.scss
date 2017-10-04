@@ -247,11 +247,41 @@
 
 
 @media (max-width: $screen-md) and (min-width: $screen-sm){
-  .field--name-field-company-website{
+  .node--type-companies.node--view-mode-full{
+    //max-width: 840px;
+    margin: auto;
+
+  }
+  //** Fields information
+  .field--name-field-company-website,
+  .field--name-field-company-taxsonomy,
+  .field--name-field-company-email,
+  .field--name-field-company-telephone{
     margin-left: 0;
   }
-  .field--name-field-company-email{
-    margin-left: 0;
+
+  //body
+  .node--type-companies.node--view-mode-full{
+    .field--name-body{
+      max-width: 920px;
+    }
+
+  }
+
+  //map
+  .field--name-field-company-map {
+    max-width: 920px;
+
+  }
+
+  //events
+  .block-views-blocksidebar-events-companies-page-block-1 {
+    .views-row {
+      display: inline-block;
+      max-width:260px;
+      margin: 0 auto 30px auto;
+
+    }
   }
 
 }
