@@ -2,7 +2,7 @@
 /******* Companies list ********/
 .companies-teaser{
   owerflow: hidden;
-  width: 100%;
+  //max-width: 1200px;
 }
 
 .companies-row{
@@ -77,7 +77,7 @@
 
 
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-xs) and (min-width: 320px) {
   //** Company view
   .view-companies{
     max-width: 95%;
@@ -89,6 +89,7 @@
     overflow: hidden;
     vertical-align: top;
     max-width: 320px;
+    display: block;
     .views-field-title{
       //display: block;
      // width:100%;
@@ -131,20 +132,22 @@
 
   }
 
-
-
 }
 
-@media (max-width: $screen-sm) and (min-width: $screen-xs) {
+@media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
   .companies-teaser{
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
   }
+  companies-row{
+    max-width: 95%;
+  }
 
-}
+  }
+
 @media (max-width: $screen-md) and (min-width: $screen-sm){
   .companies-teaser{
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
   }
 }
