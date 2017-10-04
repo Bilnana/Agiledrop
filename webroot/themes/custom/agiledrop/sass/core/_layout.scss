@@ -28,9 +28,9 @@ body{
 
 .wraper-container{
   max-width:1200px;
-  margin: auto;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
+  margin: 0 auto;
+  //padding-left: 0.9rem;
+ // padding-right: 0.9rem;
 }
 
 .layout-container-grey{
@@ -78,6 +78,12 @@ body{
     color:$white;
   }
 }
+
+
+.page-title{
+  max-width: 80%;
+  margin: auto;
+}
 /*$screen-xs: 420px;
 $screen-sm: 768px;
 $screen-md: 992px;
@@ -89,11 +95,20 @@ $screen-lg: 1200px;*/
   .wraper-container{
     max-width:$screen-xs;
     margin: auto;
+    padding-left:2%;
+    padding-right: 2%;
+  }
+  .page-title{
+    //max-width: 80%;
+   // margin: auto;
+    //font-size: 1.6em;
+  //  font-weight: 100;
   }
   .sidebar-first{
-    max-width:  $screen-xs;
+    width: 80%;
     display: block;
     float: none;
+    margin: auto;
   }
   .sidebar-second{
     max-width:  $screen-xs;
@@ -103,7 +118,7 @@ $screen-lg: 1200px;*/
   .sidebar-one .main-container{
     max-width: $screen-xs;
     display: inline-block;
-    background-color:yellow;
+   // background-color:yellow;
 
   }
 

@@ -48,19 +48,18 @@
 /************* Media Queries *****************/
 
 
-@media (max-width: $screen-xs) { //420px
+@media (min-width: 320px) and (max-width: $screen-sm){ //420px
   .view-content {
     display: block;
 
     .location-teaser {
-      //max-width: 360px;
+      max-width: $screen-sm;
       .views-row {
         //margin: auto;
       }
       .locations-row {
-        background-color: $grey-border;
-        display:inline-block;
-        min-width: 290px;
+        display:block;
+
         float: none;
         margin: auto;
       }
@@ -72,11 +71,12 @@
 @media (max-width: $screen-sm) and (min-width: $screen-xs) {  //768px
 
   .location-teaser{
-    padding-left: 10%;
+    //padding-left: 10%;
+    max-width:$screen-sm ;
     .locations-row{
       background-color: $grey-border;
       display: inline-block;
-      max-width: 270px;
+      max-width: 100%;
       margin-left:2.5%;
       float: left;
       margin-bottom:0;
@@ -87,14 +87,31 @@
 
 @media (max-width: $screen-md) and (min-width: $screen-sm){   //992px
   .location-teaser{
-    padding-left: 10%;
+   // padding-left: 10%;
+    width: 100%;
     .locations-row{
-      background-color: $grey-border;
-      display: inline-block;
-      max-width: 310px;
-      margin-left:2.5%;
-      float: left;
-      margin-bottom:2.5%;
+      //background-color: $grey-border;
+      //display: inline-block;
+      max-width: 23%;
+      //margin-left:2.5%;
+     // float: left;
+     // margin-bottom:2.5%;
+
+    }
+
+  }
+}
+@media (max-width: $screen-lg) and (min-width: $screen-sm){   //1200px
+  .location-teaser{
+   // padding-left: 10%;
+    width:100%;
+    .locations-row{
+      //background-color: $grey-border;
+      //display: inline-block;
+      max-width: 23%;
+      //margin-left:2.5%;
+      // float: left;
+      // margin-bottom:2.5%;
 
     }
 

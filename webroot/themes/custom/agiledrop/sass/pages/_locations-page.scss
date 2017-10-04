@@ -140,29 +140,36 @@
 
 @media (max-width: $screen-xs) and (min-width: 320px) {
   .node--type-locations.node--view-mode-full{
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
 
-    .block-views-blockupcoming-events-location-page-block-1{
-      .views-row{
-        max-width: 80%;
-      }
-    }
+
     .field--name-body{
-      max-width:80%;
+      max-width:100%;
       margin-bottom: 20px;
     }
   }
+  //**Sidebar view
+  .block-views-blockupcoming-events-location-page-block-1{
+    max-width: 80%;
+    margin: 0 auto;
+    .views-row{
 
+    }
+  }
+
+
+  //** Location image
   .field--name-field-location-image{
     float: none;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
     margin-bottom: 30px;
   }
 
   //** Gmap
   .field--name-field-location-map {
-    max-width: 80%;
+    max-width: 320px;
 
     p {
       display:block;
@@ -184,15 +191,14 @@
   .field--name-field-location-taxonomy{
     display:block;
     float: none;
-    width: 60%;
+    width: 100%;
   }
 
   //** Blocks with info
   .field--name-field-location-phone-number,
-  .field--name-field-location-email,
-  .field--name-field-location-website{
-    width:80%;
-    //margin: 0 auto 30px auto;
+  .field--name-field-location-website,
+  .field--name-field-location-email {
+    max-width:300px;
   }
 }
 
