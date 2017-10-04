@@ -94,9 +94,9 @@ $screen-lg: 1200px;*/
 @media (max-width: $screen-xs) {
   .wraper-container{
     max-width:$screen-xs;
-    margin: auto;
-    padding-left:2%;
-    padding-right: 2%;
+    margin: 0 auto;
+   // padding-left:2%;
+    //padding-right: 2%;
   }
   .page-title{
     max-width: 80%;
@@ -124,7 +124,6 @@ $screen-lg: 1200px;*/
 
   .sidebar-none .main-container{
     max-width: $screen-xs;
-    //background-color:green;
   }
 
   .banner-page{
@@ -234,6 +233,7 @@ $screen-lg: 1200px;*/
 
 }
 @media (max-width: $screen-lg) and (min-width: $screen-md) {
+
   .wraper-container{
     max-width:$screen-lg;
     margin: auto;
@@ -257,6 +257,7 @@ $screen-lg: 1200px;*/
 
   .sidebar-none .main-container{
     width:  $screen-lg;
+    background-color:green;
   }
 }
 

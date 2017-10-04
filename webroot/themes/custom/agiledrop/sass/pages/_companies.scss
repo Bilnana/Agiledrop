@@ -1,9 +1,5 @@
 
 /******* Companies list ********/
-.companies-teaser::before{
-  content: "FIND YOUR OWN";
-  @include rem('font-size', 18px);
-}
 .companies-teaser{
   owerflow: hidden;
   width: 100%;
@@ -77,4 +73,66 @@
 
   }
 
+}
+
+
+
+@media (max-width: $screen-xs) {
+  //** Company view
+  .view-companies{
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  //** Company item
+  .companies-row{
+    overflow: hidden;
+    vertical-align: top;
+    max-width: 290px;
+    .views-field-title{
+      display: block;
+      width:100%;
+
+      &::before{
+        display: none;
+      }
+    }
+
+    .company-logo{
+      width: 100%;
+      display: block;
+      float: left;
+    }
+    .company-body{
+      width: 100%;
+      display: block;
+
+    }
+    .a:hover{
+      @include button-hover;
+    }
+  }
+
+
+
+}
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) {
+  .companies-teaser{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+}
+@media (max-width: $screen-md) and (min-width: $screen-sm){
+  .companies-teaser{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $screen-lg) and (min-width: $screen-md){
+  .companies-teaser{
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
