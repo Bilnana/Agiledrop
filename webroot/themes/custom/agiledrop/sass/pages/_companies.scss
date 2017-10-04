@@ -88,13 +88,16 @@
   .companies-row{
     overflow: hidden;
     vertical-align: top;
-    max-width: 290px;
+    max-width: 320px;
     .views-field-title{
-      display: block;
-      width:100%;
+      //display: block;
+     // width:100%;
       a{
         color: $responsive-blue;
         font-weight: bold;
+      }
+      a:hover{
+        color: $orange;
       }
       &::before{
         display: none;
@@ -102,13 +105,11 @@
     }
 
     .company-logo{
-      width: 100%;
-      display: block;
       float: left;
     }
     .company-body{
-      width: 100%;
-      display: block;
+      min-width: 90%;
+      text-align: justify;
 
     }
 
