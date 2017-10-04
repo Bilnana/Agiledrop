@@ -217,7 +217,7 @@
 
   //map
   .field--name-field-company-map {
-    max-width: 720px;
+    max-width: 540px;
 
     p {
       display:block;
@@ -246,7 +246,7 @@
 }
 
 
-@media (max-width: $screen-md) and (min-width: $screen-sm){
+@media (max-width: $screen-md) and (min-width: $screen-sm){ //992px
   .node--type-companies.node--view-mode-full{
     //max-width: 840px;
     margin: auto;
