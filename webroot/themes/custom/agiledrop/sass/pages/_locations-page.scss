@@ -139,20 +139,28 @@
 /************* Media Queries *****************/
 
 @media (max-width: $screen-xs) and (min-width: 320px) {
+
+  //** Location full view
   .node--type-locations.node--view-mode-full{
     max-width: 80%;
     margin: 0 auto;
 
 
     .field--name-body{
-      max-width:100%;
+      max-width:80%;
       margin-bottom: 20px;
     }
   }
   //**Sidebar view
   .block-views-blockupcoming-events-location-page-block-1{
-    max-width: 80%;
-    margin: 0 auto;
+    h2{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .view-upcoming-events-location-page{
+      max-width: 80%;
+      margin: 0 auto;
+    }
     .views-row{
 
     }
@@ -184,6 +192,7 @@
     iframe {
       display:block;
       float: none;
+      width: 100%;
     }
   }
 
@@ -197,14 +206,25 @@
   //** Blocks with info
   .field--name-field-location-phone-number,
   .field--name-field-location-website,
-  .field--name-field-location-email {
-    max-width:300px;
+  .field--name-field-location-email{
+    max-width:240px;
+    a{
+      font-size: 16px;
+    }
   }
 }
 
 
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
+
+  //** Location full view
+  .node--type-locations.node--view-mode-full{
+    max-width: 80%;
+    margin: 0 auto;
+
+  }
+
   //** Equipment
   .field--name-field-location-taxonomy{
     display:block;
@@ -213,7 +233,15 @@
   }
 
   //** Sidebar event
-  .block-views-blockupcoming-events-location-page-block-1 {
+  .block-views-blockupcoming-events-location-page-block-1
+    h2{
+     max-width: 80%;
+     margin: 0 auto;
+    }
+    .view-upcoming-events-location-page{
+      max-width: 80%;
+      margin: 0 auto;
+  }
     .views-row {
       display: inline-block;
       margin: auto;
@@ -239,8 +267,14 @@
     }
   }
 
-}
+
 @media (max-width: $screen-md) and (min-width: $screen-sm){ //992px
+  //** Location full view
+  .node--type-locations.node--view-mode-full{
+    max-width: 80%;
+    margin: 0 auto;
+
+  }
   //** Equipment
   .field--name-field-location-taxonomy{
     display:block;
@@ -250,11 +284,49 @@
 
   //** Sidebar event
   .block-views-blockupcoming-events-location-page-block-1 {
+    h2{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .view-upcoming-events-location-page{
+      max-width: 80%;
+      margin: 0 auto;
+    }
     .views-row {
       display: inline-block;
       margin: auto;
     }
   }
+}
 
+@media (max-width: $screen-lg) and (min-width: $screen-md) { //1200px
+  //** Location full view
+  .node--type-locations.node--view-mode-full{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: red;
+  }
 
+  //** Equipment
+  .field--name-field-location-taxonomy{
+    display:block;
+    float: none;
+    width: 400px;
+  }
+
+  //** Sidebar event
+  .block-views-blockupcoming-events-location-page-block-1 {
+    h2{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .view-upcoming-events-location-page{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .views-row {
+      display: inline-block;
+      margin: auto;
+    }
+  }
 }
