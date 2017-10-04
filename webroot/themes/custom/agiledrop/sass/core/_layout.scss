@@ -94,6 +94,17 @@ $screen-lg: 1200px;*/
     display: block;
     float: none;
   }
+  .sidebar-one .main-container{
+    max-width: $screen-xs;
+    display: inline-block;
+    //background-color:yellow;
+
+  }
+
+  .sidebar-none .main-container{
+    width: $screen-xs;
+    //background-color:green;
+  }
 
   .banner-page{
     .text-owerlay{

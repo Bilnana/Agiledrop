@@ -4,7 +4,7 @@
 }
 .location-teaser{
   .view-content{
-    display:block
+    display:block;
   }
   .locations-row{
     background-color: $grey-border;
@@ -34,33 +34,35 @@
   .locations-row:nth-child(4n+1){
     margin-left:0;
     @media (max-width: $screen-xs) { //420px
-      margin-left: auto;
+      margin-left: 2.5%;
     }
   }
+  }
 
-}
+
 
 
 /************* Media Queries *****************/
 
-@media (max-width: $screen-xs) {  //420px
-  .location-teaser{
-    h1{
+
+@media (max-width: $screen-xs) { //420px
+  .view-content {
+    display: block;
+
+    .location-teaser {
+      //max-width: 360px;
+      .views-row {
+        //margin: auto;
+      }
+      .locations-row {
+        background-color: $grey-border;
+        display:inline-block;
+        max-width: 360px;
+        float: none;
+        margin: auto;
+      }
 
     }
-    .view-content{
-      display:block;
-
-    }
-    .locations-row{
-      background-color: $grey-border;
-      display: block;
-      max-width: 270px;
-      float: none;
-      padding-bottom: 20px;
-      margin: 20px auto 0 auto;
-    }
-
   }
 }
 
@@ -74,8 +76,7 @@
       max-width: 270px;
       margin-left:2.5%;
       float: left;
-      margin-bottom:2.5%;
-
+      margin-bottom:0;
     }
 
   }
@@ -87,7 +88,7 @@
     .locations-row{
       background-color: $grey-border;
       display: inline-block;
-      max-width: 270px;
+      max-width: 310px;
       margin-left:2.5%;
       float: left;
       margin-bottom:2.5%;
