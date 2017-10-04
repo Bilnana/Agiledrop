@@ -82,6 +82,7 @@
   .view-companies{
     max-width: 95%;
     margin: 0 auto;
+    overflow: hidden;
   }
   //** Company item
   .companies-row{
@@ -91,7 +92,10 @@
     .views-field-title{
       display: block;
       width:100%;
-
+      a{
+        color: $responsive-blue;
+        font-weight: bold;
+      }
       &::before{
         display: none;
       }
@@ -107,9 +111,23 @@
       display: block;
 
     }
-    .a:hover{
-      @include button-hover;
-    }
+
+      .views-field-view-node{
+        margin-top: 20px;
+        float: none;
+        width:100%;
+        margin: 0 auto;
+        text-align: center;
+        .button-read{
+          a{
+            @include responsive-blue;
+          }
+          a:hover, a:active{
+            @include button-hover;
+          }
+        }
+      }
+
   }
 
 
