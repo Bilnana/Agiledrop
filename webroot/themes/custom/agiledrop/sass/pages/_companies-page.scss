@@ -138,11 +138,7 @@
 
 /************* Media Queries *****************/
 
-@media (max-width: $screen-xs) {
-
-}
-
-@media (max-width: $screen-sm) and (min-width: $screen-xs) {
+@media (max-width: $screen-xs) { //420px
   .field--name-field-company-website{
     @include field;
     color: $grey-border;
@@ -178,14 +174,44 @@
   //body
   .node--type-companies.node--view-mode-full{
     .field--name-body{
-      width: 680px;
+      max-width: 380px;
     }
 
   }
 
   //map
   .field--name-field-company-map {
-   width: 720px;
+    max-width: 380px;
+  }
+
+  //events
+  .block-views-blocksidebar-events-companies-page-block-1 {
+    .views-row {
+
+    }
+  }
+}
+
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
+  .field--name-field-company-website{
+    margin-left: 0;
+  }
+  .field--name-field-company-email{
+    margin-left: 0;
+  }
+
+  //body
+  .node--type-companies.node--view-mode-full{
+    .field--name-body{
+      max-width: 760px;
+    }
+
+  }
+
+  //map
+  .field--name-field-company-map {
+   max-width: 720px;
   }
 
   //events
@@ -200,34 +226,9 @@
 
 @media (max-width: $screen-md) and (min-width: $screen-sm){
   .field--name-field-company-website{
-    @include field;
-    color: $grey-border;
-
-    a{
-      @include link;
-    }
-
-    &::before {
-      content: "\f2b5";
-      font-family: FontAwesome;
-      @include pseudoPos;
-
-    }
     margin-left: 0;
   }
   .field--name-field-company-email{
-    @include field;
-    color: $grey-border;
-
-    a{
-      @include link;
-    }
-
-    &::before {
-      content: "\f000";
-      font-family: FontAwesome;
-      @include pseudoPos;
-    }
     margin-left: 0;
   }
 

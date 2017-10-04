@@ -40,30 +40,29 @@ body{
 }
 
 .sidebar-first{
-  width: 24%;
+  width: 280px;
   display: inline-block;
   //background-color:red;
   float: left;
 }
 .sidebar-second{
-  width: 24%;
+  max-width: 280px;
   display: inline-block;
   float: right;
   //background-color: purple;
 }
 
 .sidebar-one .main-container{
-  width: 74%;
+  max-width: 900px;
   display: inline-block;
   //background-color:yellow;
 
 }
 
 .sidebar-none .main-container{
-  width: 100%;
+  width: 1200px;
   //background-color:green;
 }
-
 
 /******* Banners on pages ********/
 .banner-page{
@@ -148,6 +147,7 @@ $screen-lg: 1200px;*/
       }
     }
   }
+
 
 }
 
