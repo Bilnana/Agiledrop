@@ -131,3 +131,30 @@
     font-size: 16px;
   }
 }
+
+/************* Media Queries *****************/
+
+@media (max-width: $screen-xs) {
+
+}
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) {
+
+}
+@media (max-width: $screen-md) and (min-width: $screen-sm){
+
+  //** Equipment
+  .field--name-field-location-taxonomy{
+    display:block;
+    float: none;
+    width: 400px;
+  }
+
+  //** Sidebar event
+  .block-views-blockupcoming-events-location-page-block-1 {
+    .views-row {
+      display: inline-block;
+      margin: auto;
+    }
+  }
+}
