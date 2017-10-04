@@ -138,11 +138,7 @@
 
 }
 
-@media (max-width: $screen-sm) and (min-width: $screen-xs) {
-
-}
-@media (max-width: $screen-md) and (min-width: $screen-sm){
-
+@media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
   //** Equipment
   .field--name-field-location-taxonomy{
     display:block;
@@ -157,4 +153,42 @@
       margin: auto;
     }
   }
+
+  //** G-map
+  .field--name-field-location-map{
+    max-width: 540px;
+
+    p {
+      display:block;
+      width: 100%;
+      padding-left: 0;
+      border-left: none;
+    }
+    &::before {
+      display: none;
+    }
+    iframe {
+      display:block;
+      float: none;
+    }
+  }
+
+}
+@media (max-width: $screen-md) and (min-width: $screen-sm){ //992px
+  //** Equipment
+  .field--name-field-location-taxonomy{
+    display:block;
+    float: none;
+    width: 400px;
+  }
+
+  //** Sidebar event
+  .block-views-blockupcoming-events-location-page-block-1 {
+    .views-row {
+      display: inline-block;
+      margin: auto;
+    }
+  }
+
+
 }
