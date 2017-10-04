@@ -83,24 +83,26 @@ $screen-lg: 1200px;*/
 
 
 @media (max-width: $screen-xs) {
+
   .sidebar-first{
-    max-width: $screen-xs;
+    max-width:  $screen-xs;
     display: block;
-    //background-color:red;
+    float: none;
   }
   .sidebar-second{
-    max-width: $screen-xs;
+    max-width:  $screen-xs;
     display: block;
-    //background-color: purple;
+    float: none;
   }
+
   .banner-page{
     .text-owerlay{
-      top: 10%;
+      top: 3%;
       h1{
-        font-size: 1em;
+        font-size: 0.8em;
       }
       p{
-        font-size: 0.6em;
+        font-size: 0.5em;
       }
     }
   }
