@@ -142,14 +142,9 @@
 
   //** Location full view
   .node--type-locations.node--view-mode-full{
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
 
-
-    .field--name-body{
-      max-width:80%;
-      margin-bottom: 20px;
-    }
   }
   //**Sidebar view
   .block-views-blockupcoming-events-location-page-block-1{
@@ -169,10 +164,9 @@
 
   //** Location image
   .field--name-field-location-image{
-    float: none;
-    margin-right: auto;
-    width: 100%;
-    margin-bottom: 30px;
+    margin-right: 2%;
+    width: 50%;
+    margin-bottom: 2%;
   }
 
   //** Gmap
@@ -192,7 +186,6 @@
     iframe {
       display:block;
       float: none;
-      width: 100%;
     }
   }
 
@@ -200,7 +193,13 @@
   .field--name-field-location-taxonomy{
     display:block;
     float: none;
-    width: 100%;
+    max-width: 200px;
+    .field__item{
+      display: block;
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+
   }
 
   //** Blocks with info
@@ -229,7 +228,7 @@
   .field--name-field-location-taxonomy{
     display:block;
     float: none;
-    width: 60%;
+    width: 100%;
   }
 
   //** Sidebar event
