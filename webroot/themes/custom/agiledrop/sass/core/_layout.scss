@@ -40,30 +40,29 @@ body{
 }
 
 .sidebar-first{
-  width: 24%;
+  max-width: 280px;
   display: inline-block;
   //background-color:red;
   float: left;
 }
 .sidebar-second{
-  width: 24%;
+  max-width: 280px;
   display: inline-block;
   float: right;
   //background-color: purple;
 }
 
 .sidebar-one .main-container{
-  width: 74%;
+  max-width: 900px;
   display: inline-block;
   //background-color:yellow;
 
 }
 
 .sidebar-none .main-container{
-  width: 100%;
+  width: 1200px;
   //background-color:green;
 }
-
 
 /******* Banners on pages ********/
 .banner-page{
@@ -84,24 +83,26 @@ $screen-lg: 1200px;*/
 
 
 @media (max-width: $screen-xs) {
+
   .sidebar-first{
-    width: 100%;
+    max-width:  $screen-xs;
     display: block;
-    //background-color:red;
+    float: none;
   }
   .sidebar-second{
-    width: 100%;
+    max-width:  $screen-xs;
     display: block;
-    //background-color: purple;
+    float: none;
   }
+
   .banner-page{
     .text-owerlay{
-      top: 10%;
+      top: 3%;
       h1{
-        font-size: 1em;
+        font-size: 0.8em;
       }
       p{
-        font-size: 0.6em;
+        font-size: 0.5em;
       }
     }
   }
@@ -111,14 +112,25 @@ $screen-lg: 1200px;*/
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) {
   .sidebar-first{
-    width: 100%;
+    max-width:  $screen-sm;
     display: block;
-    //background-color:red;
+    float: none;
   }
   .sidebar-second{
-    width: 100%;
+    max-width:  $screen-sm;
     display: block;
-    //background-color: purple;
+    float: none;
+  }
+
+  .sidebar-one .main-container{
+    max-width:  $screen-sm;
+    display: inline-block;
+
+  }
+
+  .sidebar-none .main-container{
+    width:  $screen-sm;
+    //background-color:green;
   }
   .banner-page{
     .text-owerlay{
@@ -136,7 +148,37 @@ $screen-lg: 1200px;*/
 
 }
 @media (max-width: $screen-md) and (min-width: $screen-sm) {
+  .sidebar-first{
+    max-width:  $screen-md;
+    display: block;
+    float: none;
+  }
+  .sidebar-second{
+    max-width:  $screen-md;
+    display: block;
+    float: none;
+  }
 
+  .sidebar-one .main-container{
+    max-width:  $screen-md;
+    display: inline-block;
+
+  }
+
+  .sidebar-none .main-container{
+    width:  $screen-md;
+  }
+  .banner-page{
+    .text-owerlay{
+      top: 5%;
+      h1{
+        font-size: 1.2em;
+      }
+      p{
+        font-size: 0.8em;
+      }
+    }
+  }
   .banner-page {
     .text-owerlay {
       top: 10%;
@@ -148,6 +190,7 @@ $screen-lg: 1200px;*/
       }
     }
   }
+
 
 }
 
