@@ -43,6 +43,12 @@
     @media (max-width: $screen-xs) { //420px
       margin-left: 2.5%;
     }
+    @media (max-width: $screen-md) and (min-width: $screen-sm){
+      margin-left: 2.5%;
+    }
+    @media (max-width: $screen-lg) and (min-width: $screen-md){
+      margin-left: 2.5%;
+    }
   }
   }
 
@@ -65,10 +71,17 @@
 }
 
 @media (max-width: $screen-md) and (min-width: $screen-sm){   //992px
-
+  .view-content{
+    max-width:992px;
+  }
+  .locations-row:nth-child(3n+1){
+    margin-left:0;
+  }
 }
 @media (max-width: $screen-lg) and (min-width: $screen-sm){   //1200px
-
+  .locations-row:nth-child(3n+1){
+    margin-left:0;
+  }
 }
 
 
