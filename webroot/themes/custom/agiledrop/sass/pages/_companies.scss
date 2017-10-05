@@ -136,11 +136,8 @@
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
   .companies-teaser{
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
-  }
-  companies-row{
-    max-width: 95%;
   }
 
   }

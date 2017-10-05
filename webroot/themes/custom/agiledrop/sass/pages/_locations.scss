@@ -3,17 +3,18 @@
   @include rem('font-size', 18px);
 }
 .location-teaser{
-  .view-content{
-    display:block;
-  }
+  overflow: hidden;
+  clear: both;
+  border: 2px solid red;
+
   .locations-row{
     background-color: $grey-border;
-    vertical-align: top;
-    display: inline-block;
-    max-width: 270px;
-    margin-left:2.5%;
+    max-width: 275px;
+    margin-left:2.67%;
     float: left;
     margin-bottom:2.5%;
+    vertical-align: top;
+    display: inline-block;
 
 
     .views-field-field-title-bottom{
@@ -54,16 +55,6 @@
 
     .location-teaser {
       max-width: $screen-sm;
-      .views-row {
-        //margin: auto;
-      }
-      .locations-row {
-        display:block;
-
-        float: none;
-        margin: auto;
-      }
-
     }
   }
 }
