@@ -41,6 +41,12 @@
 }
 
 /******** Latest events home-page *********/
+//** FEATURED BOTTOM
+.featured-bottom{
+  overflow: hidden;
+  clear: both;
+}
+
 .region-featured-bottom-first{
   padding-top: 80px;
   padding-bottom: 120px;
@@ -195,6 +201,11 @@
   //** Home inntro block
   .home-intro{
     display:block;
+    max-width:95%;
+    margin: auto;
+    img{
+      width:95%;
+    }
     a{
       color: $black;
       font-weight: bold;
@@ -205,6 +216,36 @@
   //** Sidebar home
   .sidebar-info{
     display: block;
+    float: none;
+    max-width:95%;
+    .node--view-mode-teaser{
+      display: block;
+    }
+    .views-row{
+      max-width: 280px;
+    }
+    .field--name-title{
+      display:block;
+      width: 100%;
+      float: none;
+     // font-size: 0.7em;
+    }
+    .field--name-field-item-image{
+      display: block;
+      float: none;
+    }
+    .field--name-body{
+      display: block;
+      width: 100%;
+      float: none;
+      margin-bottom: 20px;
+    }
+  }
+
+  //** Region padding
+  .region-featured-bottom-first{
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   //** Featured companies
@@ -220,7 +261,7 @@
       display: block;
       max-width: 270px;
       margin: auto;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
   /***** Custum block with button link *****/
