@@ -281,8 +281,11 @@
   //** Home inntro block
   .home-intro{
     display:block;
-    padding-left: 12%;
-    padding-right: 12%;
+    max-width:80%;
+    margin-left: 10%;
+    img{
+      width:80%;
+    }
     a{
       color: $black;
       font-weight: bold;
@@ -292,9 +295,31 @@
   //** Sidebar info home
   .sidebar-info{
     display: block;
-    float: left;
-    padding-left: 12%;
-    max-width: 500px;
+    float: none;
+    max-width:80%;
+    margin: auto;
+    .node--view-mode-teaser{
+      display: block;
+    }
+    .views-row{
+      max-width: 420px;
+    }
+    .field--name-title{
+      display:block;
+      width: 100%;
+      float: none;
+      // font-size: 0.7em;
+    }
+    .field--name-field-item-image{
+      display: block;
+      float: none;
+    }
+    .field--name-body{
+      display: block;
+      width: 100%;
+      float: none;
+      margin-bottom: 20px;
+    }
   }
   //** Latest events home-page
   .region-featured-bottom-first{
@@ -307,17 +332,29 @@
     }
   }
   //**Featured companies
+  .block-views-blockfeatured-companies-home-block-1{
+    h2{
+      margin-left: 12%
+    }
+  }
   .region-featured-bottom-second{
     padding-top: 50px;
     padding-bottom: 80px;
-    padding-left: 12%;
+   // padding-left: 12%;
     overflow: hidden;
+  }
+  .view-featured-companies-home{
+    .view-content{
+      max-width:80%;
+      margin: auto;
+    }
   }
 
   .companies-home-row {
     display: inline-block;
-    max-width: 300px;
-    margin-bottom: 3%;
+    max-width: 290px;
+    margin-bottom: 20px;
+    //margin-left: 10%;
 
     .companies-home-logo {
       float: none;
