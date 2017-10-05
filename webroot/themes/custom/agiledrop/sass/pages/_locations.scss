@@ -1,20 +1,26 @@
+
 .location-teaser::before{
   content: "FIND YOUR OWN";
   @include rem('font-size', 18px);
 }
 .location-teaser{
-  overflow: hidden;
-  clear: both;
-  border: 2px solid red;
 
+  .view-content{
+    overflow: hidden;
+    text-align: center;
+  }
+  //border: 2px solid red;
+ //@include make-row;
   .locations-row{
     background-color: $grey-border;
-    max-width: 275px;
-    margin-left:2.67%;
-    float: left;
+    width: 270px;
+    //@include make-lg-column(4);
+    margin:2.8%;
+    //float: left;
     margin-bottom:2.5%;
     vertical-align: top;
     display: inline-block;
+    text-align: left;
 
 
     .views-field-field-title-bottom{
@@ -37,9 +43,6 @@
     @media (max-width: $screen-xs) { //420px
       margin-left: 2.5%;
     }
-    @media (max-width: $screen-sm) and (min-width: $screen-xs) { //420px
-      margin-left: 2.5%;
-    }
   }
   }
 
@@ -49,64 +52,23 @@
 /************* Media Queries *****************/
 
 
-@media (min-width: 320px) and (max-width: $screen-sm){ //420px
-  .view-content {
-    display: block;
-
-    .location-teaser {
-      max-width: $screen-sm;
-    }
-  }
+@media (min-width: 320px) and (max-width: $screen-sm) { //420px
+ .view-content{
+   max-width:320px;
+ }
 }
 
 @media (max-width: $screen-sm) and (min-width: $screen-xs) {  //768px
-
-  .location-teaser{
-    //padding-left: 10%;
-    max-width:$screen-sm ;
-    .locations-row{
-      background-color: $grey-border;
-      display: inline-block;
-      max-width: 100%;
-      margin-left:2.5%;
-      float: left;
-      margin-bottom:0;
-    }
-
+  .view-content{
+    max-width:768px;
   }
 }
 
 @media (max-width: $screen-md) and (min-width: $screen-sm){   //992px
-  .location-teaser{
-   // padding-left: 10%;
-    width: 100%;
-    .locations-row{
-      //background-color: $grey-border;
-      //display: inline-block;
-      max-width: 23%;
-      //margin-left:2.5%;
-     // float: left;
-     // margin-bottom:2.5%;
 
-    }
-
-  }
 }
 @media (max-width: $screen-lg) and (min-width: $screen-sm){   //1200px
-  .location-teaser{
-   // padding-left: 10%;
-    width:100%;
-    .locations-row{
-      //background-color: $grey-border;
-      //display: inline-block;
-      max-width: 23%;
-      //margin-left:2.5%;
-      // float: left;
-      // margin-bottom:2.5%;
 
-    }
-
-  }
 }
 
 
