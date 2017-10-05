@@ -83,7 +83,9 @@ body{
     margin-left: 20%;
   }
 }
-
+.button-go{
+  @include button-go;
+}
 /*$screen-xs: 420px;
 $screen-sm: 768px;
 $screen-md: 992px;

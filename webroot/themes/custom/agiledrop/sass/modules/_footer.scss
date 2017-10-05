@@ -92,6 +92,7 @@
     display: block;
     padding-top: 25px;
     padding-bottom: 25px;
+    text-align: center;
 
 
     .region-footer-first{
@@ -102,6 +103,8 @@
     .region-footer-second{
       display: table-cell;
       max-width: 200px;
+      text-align: center;
+      margin-left: 0;
       a{
         font-size: 20px;
       }
@@ -112,6 +115,8 @@
     .region-footer-third{
       display: table-cell;
       max-width: 200px;
+      text-align: center;
+      padding-top: 10%;
       a{
         font-size: 20px;
       }
@@ -119,17 +124,20 @@
     .region-footer-fourth{
       display: block;
       margin: auto;
+      text-align: center;
     }
     .region-footer-fifth{
+      width:100%;
       display: block;
-      margin: auto;
+      text-align: center;
+      padding: 5%;
+
       p{
         font-size: 20px;
       }
-      input{
-        padding: 15px 20px;
+      .email-footer{
+        width: 180px;
       }
-
     }
   }
   .region-footer-six{
@@ -147,68 +155,79 @@
 
 
 
-@media (max-width: $screen-sm) and (min-width: $screen-xs)  {
+@media (max-width: $screen-sm) and (min-width: $screen-xs)  { //768px
 
   .site-footer__top {
      text-align: center;
     .region-footer-first {
       display:block;
-      padding-left: 0;
-      padding-left:0;
+      width:100%;
+      padding-left: 45%;
+
+      text-align: right;
+    }
+    .region-footer-second{
+      display: table-cell;
+      max-width: 200px;
+      text-align: center;
+      margin-left: 0;
+      a{
+        font-size: 20px;
+      }
+      h4{
+        margin-left: 8%;
+      }
+    }
+    .region-footer-third{
+      display: table-cell;
+      max-width: 200px;
+      text-align: center;
+      padding-top: 10%;
+      a{
+        font-size: 20px;
+      }
+    }
+    .region-footer-fourth{
+      display: table-cell;
+      margin: auto;
       text-align: center;
     }
-    .region-footer-second {
-      display: inline-block;
-      max-width: 250px;
-      text-align: left;
-    }
-    .region-footer-third {
-      display: inline-block;
-      max-width: 250px;
-      text-align: left;
-    }
-    .region-footer-fourth {
-      display: inline-block;
-      max-width: 250px;
-      text-align: left;
-    }
-    .region-footer-fifth {
+    .region-footer-fifth{
+      width:100%;
       display: block;
-      max-width: 760px;
-      padding-right: 0;
-      margin: auto;
-      text-align:left ;
+      text-align: center;
+      padding: 5%;
 
-      h4{
-        text-align:center ;
+      p{
+        font-size: 20px;
       }
-      input{
-        padding: 10px;
+      .email-footer{
+        width: 180px;
       }
-      input[type=go]{
-        padding: 10px;
-      }
+    }
     }
   }
   .region-footer-six{
     img{
-      width:250px;
+      width:200px;
     }
     .f1{
       position: absolute;
-      top: -143px;
+      top: -109px;
       left: 0;
       z-index: -5;
 
     }
   }
-}
+
 
 
 
 @media (max-width: $screen-md) and (min-width: $screen-sm) {
   .site-footer__top {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
     .region-footer-first {
       display:inline-block;
       float: left;
@@ -239,7 +258,6 @@
       padding-right: 0;
       margin: auto;
       text-align:left ;
-
       h4{
         text-align:center ;
       }
@@ -303,6 +321,7 @@
       input{
         padding:10px 25px;
       }
+
     }
   }
   .region-footer-six{

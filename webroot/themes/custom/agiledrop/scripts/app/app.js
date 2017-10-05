@@ -15,4 +15,28 @@
 
     });
 
+    $('document').ready(function changeNavColor(){
+        var width = $(window).width();
+
+        if (width ==360){
+            alert("Jeste IPhone");
+        }
+        else{
+            console.log("Ne radi screen width.");
+        }
+    });
+
 })(jQuery);
+
+
+
+/*function changeNavColor(){
+    var $window = $(window);
+    var wWidth  = $window.width();
+    if (wWidth=320){
+        alert("You are on IPHone size.");
+    }
+    else{
+        console.log("Nije IPhone");
+    }
+}*/
