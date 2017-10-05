@@ -78,7 +78,11 @@ body{
     color:$white;
   }
 }
-
+.block-core block-page-title-block{
+  h1{
+    margin-left: 20%;
+  }
+}
 
 .page-title{
  // max-width: 80%;
@@ -257,7 +261,6 @@ $screen-lg: 1200px;*/
 
   .sidebar-none .main-container{
     width:  $screen-lg;
-    background-color:green;
   }
 }
 
