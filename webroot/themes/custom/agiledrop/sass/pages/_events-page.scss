@@ -139,3 +139,39 @@
     font-size: 20px;
   }
 }
+
+
+
+/************* Media Queries *****************/
+
+@media (max-width: $screen-xs) {
+  //** Full page view event
+  .node--view-mode-full{
+    display: block;
+    width:95%;
+
+  }
+
+  //** About company
+  .block-views-blockabout-company-event-page-block-1{
+    h2{
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .view-sidebar-events-companies-page{
+     width: 100%;
+      display: block;
+      float: none;
+    }
+    .views-row{
+
+    }
+  }
+}
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) {
+
+}
+@media (max-width: $screen-md) and (min-width: $screen-sm){
+
+}

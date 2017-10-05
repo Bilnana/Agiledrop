@@ -83,18 +83,19 @@
 
     <div id="main-wrapper" class="layout-container clearfix">
         <div class="wraper-container">
-          {% if page.sidebar_first %}
-            <aside class="sidebar-first">
-              <div class="sidebar-section">
-                  {{ page.sidebar_first }}
-              </div>
-            </aside>
-          {% endif %}
 
             <section class="main-container">
               <a id="main-content"></a>
                 {{ page.content }}
             </section>
+
+            {% if page.sidebar_first %}
+                <aside class="sidebar-first">
+                    <div class="sidebar-section">
+                        {{ page.sidebar_first }}
+                    </div>
+                </aside>
+            {% endif %}
 
           {% if page.sidebar_second %}
             <aside class="sidebar-second">
