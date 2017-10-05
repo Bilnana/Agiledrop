@@ -300,6 +300,14 @@
 
   }
 
+  //** Fields information
+  .field--name-field-company-website,
+  .field--name-field-company-taxsonomy,
+  .field--name-field-company-email,
+  .field--name-field-company-telephone{
+    margin-left: 0;
+  }
+
   //** Gmap
   .field--name-field-company-map {
     max-width: 920px;
