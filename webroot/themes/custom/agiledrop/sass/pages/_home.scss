@@ -451,6 +451,18 @@
     margin-bottom: 20px;
 
   }
+  //** Featured companies
+  .block-views-blockfeatured-companies-home-block-1{
+    h2{
+      margin-left: 12%
+    }
+  }
+  .view-featured-companies-home{
+    .view-content{
+      max-width:80%;
+      margin: auto;
+    }
+  }
 
   //** Latest events home-page
   .region-featured-bottom-first{
@@ -463,23 +475,7 @@
     }
   }
 
-  //** Custum block with button link
-  .block-block-content3d674abc-ec60-4786-93eb-8f628e0c6463{
-    text-align: center;
 
-  }
-
-
-  //** Custum block Free service
-  .region-featured-bottom-third {
-
-    .free-service {
-      padding-top: 50px;
-      padding-bottom: 80px;
-      padding-left: 12%;
-      padding-right: 12%;
-    }
-  }
 
 }
 
