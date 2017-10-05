@@ -85,6 +85,9 @@
 /************* Media Queries *****************/
 
 @media (max-width: $screen-xs){
+  .region-footer-first{
+    max-width: 100%;
+  }
   .site-footer__top {
     display: block;
     padding-top: 25px;
@@ -204,6 +207,62 @@
 
 
 @media (max-width: $screen-md) and (min-width: $screen-sm) {
+  .site-footer__top {
+    text-align: center;
+    .region-footer-first {
+      display:inline-block;
+      float: left;
+      padding-top: 20px;
+      max-width: 50px;
+      padding-left: 0;
+      //padding-left:5%;
+      text-align: right;
+    }
+    .region-footer-second {
+      display: inline-block;
+      max-width: 100px;
+      text-align: left;
+    }
+    .region-footer-third {
+      display: inline-block;
+      max-width: 200px;
+      text-align: left;
+    }
+    .region-footer-fourth {
+      display: inline-block;
+      max-width: 250px;
+      text-align: left;
+    }
+    .region-footer-fifth {
+      display: block;
+      max-width: 760px;
+      padding-right: 0;
+      margin: auto;
+      text-align:left ;
+
+      h4{
+        text-align:center ;
+      }
+
+      input{
+        padding:10px 25px;
+      }
+    }
+  }
+  .region-footer-six{
+    img{
+      width:250px;
+    }
+    .f1{
+      position: absolute;
+      top: -143px;
+      left: 0;
+      z-index: -5;
+
+    }
+  }
+}
+@media (max-width: $screen-lg) and (min-width: $screen-md) {
   .site-footer__top {
     text-align: center;
     .region-footer-first {
