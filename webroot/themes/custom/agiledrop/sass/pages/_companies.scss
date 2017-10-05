@@ -1,12 +1,8 @@
 
 /******* Companies list ********/
-.companies-teaser::before{
-  content: "FIND YOUR OWN";
-  @include rem('font-size', 18px);
-}
 .companies-teaser{
   owerflow: hidden;
-  width: 100%;
+  //max-width: 1200px;
 }
 
 .companies-row{
@@ -77,4 +73,85 @@
 
   }
 
+}
+
+
+
+@media (max-width: $screen-xs) and (min-width: 320px) {
+  //** Company view
+  .view-companies{
+    max-width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  //** Company item
+  .companies-row{
+    overflow: hidden;
+    vertical-align: top;
+    max-width: 320px;
+    display: block;
+    .views-field-title{
+      //display: block;
+     // width:100%;
+      a{
+        color: $responsive-blue;
+        font-weight: bold;
+      }
+      a:hover{
+        color: $orange;
+      }
+      &::before{
+        display: none;
+      }
+    }
+
+    .company-logo{
+      float: left;
+    }
+    .company-body{
+      min-width: 90%;
+      text-align: justify;
+
+    }
+
+      .views-field-view-node{
+        margin-top: 20px;
+        float: none;
+        width:100%;
+        margin: 0 auto;
+        text-align: center;
+        .button-read{
+          a{
+            @include responsive-blue;
+          }
+          a:hover, a:active{
+            @include button-hover;
+          }
+        }
+      }
+
+  }
+
+}
+
+@media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
+  .companies-teaser{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  }
+
+@media (max-width: $screen-md) and (min-width: $screen-sm){
+  .companies-teaser{
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $screen-lg) and (min-width: $screen-md){
+  .companies-teaser{
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
