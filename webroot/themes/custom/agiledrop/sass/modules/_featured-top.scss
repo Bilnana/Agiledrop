@@ -114,9 +114,11 @@
       min-width:320px;
       margin: auto;
     }
-    //**Search block locations page
-    .block-block-content2fcf1b68-d958-4029-96b2-c0b576d94c18 {
-    display: none;
+    //**Search block locations,companies,events page
+    .block-block-content2fcf1b68-d958-4029-96b2-c0b576d94c18,
+    .block-block-content1788ef5c-8794-4e0c-bc53-9fb562464142,
+    .block-block-contentbce4d763-42d1-4886-82d8-6f8144fb7d63{
+       display: none;
     }
   }
 }

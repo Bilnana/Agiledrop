@@ -15,16 +15,22 @@
 
     });
 
-   /* $('document').ready(function changeNavColor(){
+    /* $('document').ready(function changeNavColor(){
         var width = window.innerWidth;
 
         if (width ==320){
-            alert("Jeste IPhone");
+            $('.region-primary-menu').addClass('blue-nav');
         }
         else{
             console.log("Ne radi screen width.");
         }
     });*/
+    $('document').ready(function changeNavColor(){
+        if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+            $('.layout-container').toggleClass('blue-nav');
+        }
+   });
+
 
 })(jQuery);
 

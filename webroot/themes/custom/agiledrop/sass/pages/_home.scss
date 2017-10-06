@@ -201,15 +201,16 @@
   //** Home inntro block
   .home-intro{
     display:block;
+    max-width:320px;
     margin: auto;
     .views-row{
-      max-width: 280px;
+      max-width: 95%;
       .view-body{
-        width:100%;
+        width: 95%;
       }
     }
     img{
-      width:100%;
+      width:95%;
     }
     a{
       color: $black;
@@ -223,18 +224,19 @@
     display: block;
     float: none;
     max-width:95%;
+    margin: auto;
     .node--view-mode-teaser{
       display: block;
     }
     .views-row{
-      max-width: 280px;
+     margin: auto;
       .field--name-body{
-        width:100%;
+        width:95%;
       }
     }
     .field--name-title{
       display:block;
-      width: 100%;
+      width: 95%;
       float: none;
      // font-size: 0.7em;
     }
@@ -244,7 +246,7 @@
     }
     .field--name-body{
       display: block;
-      width: 100%;
+      width: 95%;
       float: none;
       margin-bottom: 20px;
     }

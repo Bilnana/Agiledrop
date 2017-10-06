@@ -14,6 +14,8 @@ body{
   }
   font-family: Karla-Regular;
 }
+
+
 #page-wrapper{
   overflow: hidden;
   clear: both;
@@ -29,6 +31,7 @@ body{
 .wraper-container{
   max-width:1200px;
   margin: 0 auto;
+
   //padding-left: 0.9rem;
  // padding-right: 0.9rem;
 }
@@ -58,6 +61,7 @@ body{
 .sidebar-one .main-container{
   max-width: 900px;
   display: inline-block;
+
   //background-color:yellow;
 
 }
