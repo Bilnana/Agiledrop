@@ -1,3 +1,4 @@
+/********** Featured top **********/
 .region-featured-top{
   input {
     line-height: normal;
@@ -7,6 +8,37 @@
   .form-submit{
 
   }
+}
+
+
+.featured-top{
+  background-color: $grey;
+  text-align: center;
+  .form--inline{
+    display: flex;
+    justify-content: center;
+  }
+  .form-submit{
+    background: $orange;
+    border: 1px solid $orange;
+    color: $white;
+    padding:6px;
+    font-weight: bold;
+  }
+  .form-autocomplete{
+    background-color: white;
+    border: 1px solid $orange;
+    padding: 6px;
+    width: 225px;
+  }
+  .form-select{
+    background-image: none;
+    background-color: white;
+    border: 1px solid $orange;
+    padding: 5px;
+    width: 200px;
+  }
+
 }
 
 
