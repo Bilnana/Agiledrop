@@ -84,21 +84,29 @@
 
 /************* Media Queries *****************/
 
-@media (max-width: $screen-xs){
+@media (max-width: $screen-xs) and (min-width: 320px){  //420px
+  .site-footer{
+    background-color:$grey-border;
+  }
   .site-footer__top {
     display: block;
     padding-top: 25px;
     padding-bottom: 25px;
+    text-align: center;
 
 
     .region-footer-first{
       display: block;
       padding-left: 0;
-      margin-left: 10%;
+      text-align: center;
+      width: 100%;
+      padding-left:45%;
     }
     .region-footer-second{
       display: table-cell;
       max-width: 200px;
+      text-align: center;
+      margin-left: 0;
       a{
         font-size: 20px;
       }
@@ -109,6 +117,8 @@
     .region-footer-third{
       display: table-cell;
       max-width: 200px;
+      text-align: center;
+      padding-top: 10%;
       a{
         font-size: 20px;
       }
@@ -116,17 +126,20 @@
     .region-footer-fourth{
       display: block;
       margin: auto;
+      text-align: center;
     }
     .region-footer-fifth{
+      width:100%;
       display: block;
-      margin: auto;
+      text-align: center;
+      padding: 5%;
+
       p{
         font-size: 20px;
       }
-      input{
-        padding: 15px 20px;
+      .email-footer{
+        width: 180px;
       }
-
     }
   }
   .region-footer-six{
@@ -144,76 +157,149 @@
 
 
 
-@media (max-width: $screen-sm) and (min-width: $screen-xs)  {
-
+@media (max-width: $screen-sm) and (min-width: $screen-xs)  { //768px
+  .site-footer{
+    background-color:$grey-border;
+  }
   .site-footer__top {
      text-align: center;
     .region-footer-first {
       display:block;
-      padding-left: 0;
-      padding-left:0;
+      width:100%;
+      padding-left: 45%;
+      text-align: right;
+    }
+    .region-footer-second{
+      display: table-cell;
+      //max-width: 200px;
+      text-align: center;
+      margin-left: 0;
+      a{
+        font-size: 20px;
+      }
+      h4{
+        margin-left: 8%;
+      }
+    }
+    .region-footer-third{
+      display: table-cell;
+     // max-width: 200px;
+      text-align: center;
+      padding-top: 10%;
+      a{
+        font-size: 20px;
+      }
+    }
+    .region-footer-fourth{
+      display: table-cell;
+      margin: auto;
       text-align: center;
     }
-    .region-footer-second {
-      display: inline-block;
-      max-width: 250px;
-      text-align: left;
-    }
-    .region-footer-third {
-      display: inline-block;
-      max-width: 250px;
-      text-align: left;
-    }
-    .region-footer-fourth {
-      display: inline-block;
-      max-width: 250px;
-      text-align: left;
-    }
-    .region-footer-fifth {
+    .region-footer-fifth{
+      width:100%;
       display: block;
-      max-width: 760px;
-      padding-right: 0;
-      margin: auto;
-      text-align:left ;
+      text-align: center;
 
-      h4{
-        text-align:center ;
+      p{
+        font-size: 20px;
       }
-      input{
-        padding: 10px;
-      }
-      input[type=go]{
-        padding: 10px;
+      .email-footer{
+        width: 180px;
       }
     }
-  }
-  .region-footer-six{
-    img{
-      width:250px;
-    }
-    .f1{
-      position: absolute;
-      top: -143px;
-      left: 0;
-      z-index: -5;
+    .region-footer-six{
+      img{
+        width:200px;
+      }
+      .f1{
+       display: none;
 
+      }
+      .f2{
+        display: none;
+
+      }
     }
   }
 }
 
 
 
-@media (max-width: $screen-md) and (min-width: $screen-sm) {
-  .site-footer__top {
+
+@media (max-width: $screen-md) and (min-width: $screen-sm) {//992px
+  .site-footer{
+    background-color:$grey-border;
+  }
+  .site-footer__top{
     text-align: center;
     .region-footer-first {
-      display:inline-block;
-      float: left;
-      padding-top: 20px;
-      max-width: 50px;
-      padding-left: 0;
-      //padding-left:5%;
-      text-align: right;
+      display:block;
+      width:100%;
+      padding-left: 45%;
+    }
+    .region-footer-second{
+      display: table-cell;
+      //max-width: 200px;
+      text-align: center;
+      margin-left: 0;
+      a{
+        font-size: 20px;
+      }
+      h4{
+        margin-left: 8%;
+      }
+    }
+    .region-footer-third{
+      display: table-cell;
+      // max-width: 200px;
+      text-align: center;
+      padding-top: 10%;
+      a{
+        font-size: 20px;
+      }
+    }
+    .region-footer-fourth{
+      display: table-cell;
+      margin: auto;
+      text-align: center;
+    }
+    .region-footer-fifth{
+      width:100%;
+      display: block;
+      text-align: center;
+      margin: auto;
+
+      p{
+        font-size: 20px;
+      }
+      .email-footer{
+        width: 180px;
+      }
+    }
+  }
+  .region-footer-six{
+    .f1{
+      display: none;
+
+    }
+    .f2{
+      display: none;
+
+    }
+  }
+}
+
+@media (max-width: $screen-lg) and (min-width: $screen-md) {
+  .site-footer{
+    background-color:$grey-border;
+  }
+  .site-footer__top {
+    text-align: center;
+    background-color: $grey-border;
+    .region-footer-first {
+      display:block;
+      width:100%;
+      padding-left: 45%;
     }
     .region-footer-second {
       display: inline-block;
@@ -235,7 +321,7 @@
       max-width: 760px;
       padding-right: 0;
       margin: auto;
-      text-align:left ;
+      text-align:center ;
 
       h4{
         text-align:center ;
@@ -244,6 +330,7 @@
       input{
         padding:10px 25px;
       }
+
     }
   }
   .region-footer-six{
@@ -254,7 +341,7 @@
       position: absolute;
       top: -143px;
       left: 0;
-      z-index: -5;
+      z-index: 10;
 
     }
   }

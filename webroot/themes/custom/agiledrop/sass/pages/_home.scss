@@ -201,15 +201,17 @@
   //** Home inntro block
   .home-intro{
     display:block;
+    max-width:90%;
     margin: auto;
     .views-row{
-      max-width: 280px;
+     max-width: 90%;
+      margin-left: 2%;
       .view-body{
-        width:100%;
+       max-width: 90%;
       }
     }
     img{
-      width:100%;
+     //idth:95%;
     }
     a{
       color: $black;
@@ -223,18 +225,19 @@
     display: block;
     float: none;
     max-width:95%;
+    margin: auto;
     .node--view-mode-teaser{
       display: block;
     }
     .views-row{
-      max-width: 280px;
+     margin: auto;
       .field--name-body{
-        width:100%;
+        width:95%;
       }
     }
     .field--name-title{
       display:block;
-      width: 100%;
+      width: 95%;
       float: none;
      // font-size: 0.7em;
     }
@@ -244,7 +247,7 @@
     }
     .field--name-body{
       display: block;
-      width: 100%;
+      width: 95%;
       float: none;
       margin-bottom: 20px;
     }
@@ -291,6 +294,7 @@
     max-width: 290px;
     margin-bottom: 20px;
     text-align: left;
+    margin: auto;
 
     .companies-home-logo {
       float: none;
@@ -309,7 +313,7 @@
     .companies-home-body {
       display: block;
       float: none;
-      width:100%;
+      width:95%;
     }
   }
   /***** Custum block with button link *****/
@@ -318,6 +322,36 @@
   }
   .t2{
     display: none;
+  }
+
+  /***** Custum block Free service *****/
+  .region-featured-bottom-third {
+
+    a {
+      @include responsive-blue;
+    }
+    a:hover, a:active {
+      @include button-hover;
+    }
+    .buttons {
+      padding-top: 40px;
+
+      .btn-sign {
+        margin-right: 5px;
+      }
+      .btn-contact {
+        margin-left: 5px;
+      }
+    }
+  }
+  /***** Custum block with button link *****/
+  .block-block-content3d674abc-ec60-4786-93eb-8f628e0c6463{
+    a{
+      @include responsive-blue;
+    }
+    a:hover, a:active{
+      @include button-hover;
+    }
   }
 
   //end media

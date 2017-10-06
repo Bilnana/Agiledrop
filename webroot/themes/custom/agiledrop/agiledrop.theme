@@ -31,14 +31,16 @@ function agiledrop_preprocess_html(&$variables) {
 
 function agiledrop_form_views_exposed_form_alter(&$form, &$form_state) {
     if($form["#id"] == 'views-exposed-form-companies-page-1')
-    {$form['field_industry_target_id']['#options']["All"] = 'FILTER BY INDUSTRY';}
+    {$form['field_company_taxsonomy_target_id']['#options']["All"] = 'FILTER BY INDUSTRY';}
 
     if($form["#id"] == 'views-exposed-form-events-page-1')
-    {$form['field_event_type_target_id']['#options']["All"] = 'FILTER BY EVENT TYPE';}
+    {$form['field_event_type_taxonomy_target_id']['#options']["All"] = 'FILTER BY EVENT TYPE';}
 
     if($form["#id"] == 'views-exposed-form-locations-page-1')
-    {$form['field_equipment_target_id']['#options']["All"] = 'FILTER BY EQUIPMENT';}
+    {$form['field_location_taxonomy_target_id']['#options']["All"] = 'FILTER BY EQUIPMENT';}
 }
+
+
 
 function agiledrop_form_alter(&$form, &$form_state) {
     if ($form["#id"] == 'views-exposed-form-companies-page-1') {
@@ -53,4 +55,5 @@ function agiledrop_form_alter(&$form, &$form_state) {
         $form['title']['#attributes']['placeholder'] = t('SEARCH BY TITLE');
     }
 }
+
 

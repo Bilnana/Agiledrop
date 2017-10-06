@@ -32,7 +32,7 @@
     float: left;
   }
   .company-body{
-    width: 70%;
+    width: 80%;
     display: inline-block;
 
   }
@@ -60,20 +60,7 @@
   border-bottom: none;
 }
 
-/********** Featured top **********/
-.featured-top{
-  background-color: $grey;
-  text-align: center;
-  .form--inline{
-    display: flex;
-    justify-content: center;
-  }
-  .form-actions{
 
-
-  }
-
-}
 
 
 
@@ -138,6 +125,13 @@
   .companies-teaser{
     max-width: 100%;
     margin: 0 auto;
+
+  }
+  .block-agiledrop-page-title{
+    h1{
+      padding-left:5%;
+    }
+
   }
 
   }

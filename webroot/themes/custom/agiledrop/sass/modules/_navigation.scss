@@ -6,7 +6,25 @@
 // ========================================
 
 /********** MAIN MENU ***********/
+.cover{
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+  z-index:5;
+  width:100%;
+  height:100%;
+  display:none;
+}
 
+#cover{
+  display:block;
+  opacity:2;
+}
+
+.blue-nav{
+  background-color: cornflowerblue;
+}
 .region-primary-menu{
     text-align: center;
     padding: 10px;

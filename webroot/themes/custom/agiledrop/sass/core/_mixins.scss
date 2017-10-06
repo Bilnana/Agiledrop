@@ -105,14 +105,9 @@
 }
 @mixin button-go{
 	background-color: $blue;
-	//border-radius: 20px;
-	padding: 2%;
-	width: 30px;
-	font-size: 12px;
 	color: white;
 	font-weight: bold;
-	border: 1px solid $blue;
-	//margin-right: 10px;
+	boredr: 2px solid $blue;
 }
 
 @mixin responsive-blue{

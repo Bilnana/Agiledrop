@@ -15,7 +15,7 @@
     background-color: $grey-border;
     width: 270px;
     //@include make-lg-column(4);
-    margin:2.8%;
+    margin:13px;
     //float: left;
     margin-bottom:2.5%;
     vertical-align: top;
@@ -36,18 +36,6 @@
     a{
       color:$black;
       font-weight: bold;
-    }
-  }
-  .locations-row:nth-child(4n+1){
-    margin-left:0;
-    @media (max-width: $screen-xs) { //420px
-      margin-left: 2.5%;
-    }
-    @media (max-width: $screen-md) and (min-width: $screen-sm){
-      margin-left: 2.5%;
-    }
-    @media (max-width: $screen-lg) and (min-width: $screen-md){
-      margin-left: 2.5%;
     }
   }
   }
@@ -74,13 +62,11 @@
   .view-content{
     max-width:992px;
   }
-  .locations-row:nth-child(3n+1){
-    margin-left:0;
-  }
+
 }
 @media (max-width: $screen-lg) and (min-width: $screen-sm){   //1200px
-  .locations-row:nth-child(3n+1){
-    margin-left:0;
+  .view-content{
+    max-width:1200px;
   }
 }
 

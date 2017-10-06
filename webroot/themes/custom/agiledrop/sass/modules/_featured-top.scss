@@ -1,11 +1,128 @@
+/********** Featured top **********/
 .region-featured-top{
-  input {
-    line-height: normal;
-    padding: 5px;
-    border: 1px solid $orange;
-    }
-  .form-submit{
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  background-color: $grey;
+  text-align: center;
+}
 
+.featured-top{
+  background-color: $grey;
+  text-align: center;
+
+  .form--inline{
+    display: flex;
+    justify-content: center;
+  }
+    .form-submit{
+      background: $orange;
+      border: 1px solid $orange;
+      color: $white;
+      padding:6px;
+      font-weight: bold;
+      //float: right;
+    }
+
+  .form-autocomplete{
+    background-color: white;
+    border: 1px solid $orange;
+    padding: 6px;
+    width: 225px;
+  }
+  .form-select{
+    background-image: none;
+    background-color: white;
+    border: 1px solid $orange;
+    padding: 5px;
+    width: 200px;
+  }
+   //**Search block locations page
+  .block-block-content2fcf1b68-d958-4029-96b2-c0b576d94c18{
+  }
+   //**Search div
+  .search{
+    border-left: 4px solid $orange;
+    padding-left: 10px;
+    text-align: left;
+    width:120px;
+    .small{
+      background-color:$orange;
+      color: $white;
+      margin: 8px;
+      font-size: 14px;
+      padding-right: 2px;
+    }
+    .big{
+      font-size: 18px;
+      color:$white;
+      margin: 8px;
+      font-weight: bold;
+    }
+  }
+
+}
+
+
+/************* Media Queries *****************/
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .region-featured-top {
+    max-width: $screen-xs;
+    display: block;
+    background-color: $grey;
+    text-align: center;
+
+  }
+
+  .featured-top {
+    background-color: $grey;
+
+    .form--inline {
+      display: block;
+      overflow: hidden;
+      .form-item {
+        float: none;
+        margin-right: 0;
+      }
+
+
+    }
+    .form-submit {
+      background: $orange;
+      border: 1px solid $orange;
+      color: $white;
+      padding: 6px;
+      font-weight: bold;
+      display: block;
+      min-width:300px;
+      margin: auto;
+
+    }
+
+    .form-autocomplete {
+      background-color: white;
+      border: 1px solid $orange;
+      padding: 6px;
+      //display: block;
+      min-width:300px;
+      margin: auto;
+    }
+    .form-select {
+      background-image: none;
+      background-color: white;
+      border: 1px solid $orange;
+      padding: 5px;
+     // display: block;
+      min-width:300px;
+      margin: auto;
+    }
+    //**Search block locations,companies,events page
+    .block-block-content2fcf1b68-d958-4029-96b2-c0b576d94c18,
+    .block-block-content1788ef5c-8794-4e0c-bc53-9fb562464142,
+    .block-block-contentbce4d763-42d1-4886-82d8-6f8144fb7d63{
+       display: none;
+    }
   }
 }
 
