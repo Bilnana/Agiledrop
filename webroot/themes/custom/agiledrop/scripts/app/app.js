@@ -32,7 +32,7 @@
     //Change color of navgation on android and Iphone devices
     $('document').ready(function changeNavColor(){
         if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-            $('.layout-container').toggleClass('blue-nav');
+            $('').toggleClass('blue-nav');
         }
    });
 

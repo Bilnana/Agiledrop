@@ -8,7 +8,7 @@
   }
   .events-row{
     max-width: 360px;
-    background: grey;
+    background: $grey-border;
     //margin-left: 3.75%;
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +78,7 @@
     }
     .events-row {
       max-width: 360px;
-      background: grey;
+      background: $grey;
       display: block;
       text-align: center;
       margin: auto;
@@ -97,11 +97,11 @@
 @media (max-width: $screen-sm) and (min-width: $screen-xs) {
   .events-teaser {
     .view-content {
-      //text-align: center;
+      text-align: center;
     }
     .events-row {
       max-width: 720px;
-      background: grey;
+      background: $grey;
       display: block;
       text-align: center;
       overflow: hidden;
@@ -148,12 +148,12 @@
 
     .view-content {
       display: block;
-      //text-align: center;
+      text-align: center;
     }
     .events-row {
       max-width: 780px;
-      background: grey;
       display: block;
+      background: $grey;
       text-align: center;
       overflow: hidden;
       margin-bottom: 20px;
@@ -195,16 +195,15 @@
 
 @media (max-width: $screen-lg) and (min-width: $screen-md){
   .events-teaser {
+    padding-left:10%;
 
     .view-content {
      // text-align: center;
     }
     .events-row {
+      background: $grey;
       max-width: 780px;
-      background: grey;
       display: block;
-      text-align: center;
-      overflow: hidden;
       margin-bottom: 20px;
     }
     .event-image-teaser{
