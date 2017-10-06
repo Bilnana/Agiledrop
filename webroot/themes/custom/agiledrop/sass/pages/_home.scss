@@ -201,16 +201,17 @@
   //** Home inntro block
   .home-intro{
     display:block;
-    max-width:320px;
+    max-width:90%;
     margin: auto;
     .views-row{
-      max-width: 95%;
+     max-width: 90%;
+      margin-left: 2%;
       .view-body{
-        width: 95%;
+       max-width: 90%;
       }
     }
     img{
-      width:95%;
+     //idth:95%;
     }
     a{
       color: $black;

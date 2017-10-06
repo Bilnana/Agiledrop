@@ -15,16 +15,21 @@
 
     });
 
+    //Change color of navigation vhen screen is  < 420px
+
     /* $('document').ready(function changeNavColor(){
         var width = window.innerWidth;
 
-        if (width ==320){
-            $('.region-primary-menu').addClass('blue-nav');
+        if (width ==420){
+            $('.top-nav').addClass('blue-nav');
         }
         else{
             console.log("Ne radi screen width.");
         }
     });*/
+
+
+    //Change color of navgation on android and Iphone devices
     $('document').ready(function changeNavColor(){
         if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
             $('.layout-container').toggleClass('blue-nav');

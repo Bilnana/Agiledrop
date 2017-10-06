@@ -7,10 +7,13 @@
   text-align: center;
 }
 
+//Exposed form
+.block-views-exposed-filter-blockcompanies-page-1{
+
+}
 .featured-top{
   background-color: $grey;
   text-align: center;
-
 
   .form--inline{
     display: flex;
@@ -73,6 +76,7 @@
     display: block;
     background-color: $grey;
     text-align: center;
+
   }
 
   .featured-top {
@@ -80,9 +84,12 @@
 
     .form--inline {
       display: block;
-      input[type="text"] {
-        margin: auto;
+      overflow: hidden;
+      .form-item {
+        float: none;
+        margin-right: 0;
       }
+
 
     }
     .form-submit {
@@ -101,7 +108,7 @@
       background-color: white;
       border: 1px solid $orange;
       padding: 6px;
-      display: block;
+      //display: block;
       min-width:320px;
       margin: auto;
     }
@@ -110,7 +117,7 @@
       background-color: white;
       border: 1px solid $orange;
       padding: 5px;
-      display: block;
+     // display: block;
       min-width:320px;
       margin: auto;
     }
