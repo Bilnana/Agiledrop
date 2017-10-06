@@ -15,16 +15,16 @@
 
     });
 
-    $('document').ready(function changeNavColor(){
-        var width = $(window).width();
+   /* $('document').ready(function changeNavColor(){
+        var width = window.innerWidth;
 
-        if (width ==360){
+        if (width ==320){
             alert("Jeste IPhone");
         }
         else{
             console.log("Ne radi screen width.");
         }
-    });
+    });*/
 
 })(jQuery);
 

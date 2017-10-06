@@ -1,30 +1,30 @@
 /********** Featured top **********/
 .region-featured-top{
-  input {
-    line-height: normal;
-    padding: 5px;
-    border: 1px solid $orange;
-    }
-  .form-submit{
-
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $grey;
+  text-align: center;
 }
-
 
 .featured-top{
   background-color: $grey;
   text-align: center;
+
+
   .form--inline{
     display: flex;
     justify-content: center;
   }
-  .form-submit{
-    background: $orange;
-    border: 1px solid $orange;
-    color: $white;
-    padding:6px;
-    font-weight: bold;
-  }
+    .form-submit{
+      background: $orange;
+      border: 1px solid $orange;
+      color: $white;
+      padding:6px;
+      font-weight: bold;
+      //float: right;
+    }
+
   .form-autocomplete{
     background-color: white;
     border: 1px solid $orange;
@@ -37,6 +37,29 @@
     border: 1px solid $orange;
     padding: 5px;
     width: 200px;
+  }
+   //**Search block locations page
+  .block-block-content2fcf1b68-d958-4029-96b2-c0b576d94c18{
+  }
+   //**Search div
+  .search{
+    border-left: 4px solid $orange;
+    padding-left: 10px;
+    text-align: left;
+    width:120px;
+    .small{
+      background-color:$orange;
+      color: $white;
+      margin: 8px;
+      font-size: 14px;
+      padding-right: 2px;
+    }
+    .big{
+      font-size: 18px;
+      color:$white;
+      margin: 8px;
+      font-weight: bold;
+    }
   }
 
 }
