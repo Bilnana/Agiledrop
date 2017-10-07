@@ -139,9 +139,6 @@ $screen-lg: 1200px;*/
       }
     }
   }
-  .page-title{
-    padding-left: 10%;
-  }
 }
 
 
@@ -182,9 +179,6 @@ $screen-lg: 1200px;*/
         font-size: 0.8em;
       }
     }
-  }
-  .page-title{
-    padding-left: 10%;
   }
 }
 
@@ -235,10 +229,6 @@ $screen-lg: 1200px;*/
       }
     }
   }
-  .page-title{
-    padding-left: 10%;
-  }
-
 
 }
 @media (max-width: $screen-lg) and (min-width: $screen-md) {
@@ -266,9 +256,6 @@ $screen-lg: 1200px;*/
 
   .sidebar-none .main-container{
     width:  $screen-lg;
-  }
-  .page-title{
-    padding-left: 10%;
   }
 }
 

@@ -25,15 +25,18 @@
 .blue-nav{
   background-color: cornflowerblue;
 }
+
+/******** Primary menu *********/
 .region-primary-menu{
     text-align: center;
-    padding: 10px;
 
     ul{
       display: block;
     }
     li{
       display: inline-block;
+      margin-top: 0.9em;
+      margin-bottom: 0.9em;
     }
     a{
       text-decoration: none;
@@ -114,6 +117,7 @@
     font-weight: bold;
     font-size:32px;
     float: right;
+    margin-right: 10px;
   }
   .toggle-nav:hover{
     color: $grey;

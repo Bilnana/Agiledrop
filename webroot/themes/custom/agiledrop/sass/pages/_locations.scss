@@ -46,27 +46,36 @@
 /************* Media Queries *****************/
 
 
-@media (min-width: 320px) and (max-width: $screen-sm) { //420px
- .view-content{
-   max-width:320px;
- }
-}
+@media (min-width: 320px) and (max-width: $screen-xs) { //420px
 
-@media (max-width: $screen-sm) and (min-width: $screen-xs) {  //768px
-  .view-content{
-    max-width:768px;
+  .location-teaser {
+    .view-content {
+      max-width: 320px;
+    }
+  }
+}
+@media (min-width: $screen-sm) and (max-width: $screen-xs) { //420px
+
+  .location-teaser {
+    .view-content {
+      max-width: $screen-sm;
+      margin: auto;
+    }
   }
 }
 
-@media (max-width: $screen-md) and (min-width: $screen-sm){   //992px
-  .view-content{
-    max-width:992px;
-  }
 
-}
-@media (max-width: $screen-lg) and (min-width: $screen-sm){   //1200px
-  .view-content{
-    max-width:1200px;
+
+@media (max-width: $screen-lg) and (min-width: $screen-sm) { //1200px
+  .location-teaser {
+    .view-content {
+      max-width: 95%;
+      margin: auto;
+    }
+
+    .locations-row {
+      margin: 15px;
+    }
   }
 }
 

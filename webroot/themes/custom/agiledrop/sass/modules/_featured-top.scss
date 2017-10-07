@@ -66,7 +66,7 @@
 
 /************* Media Queries *****************/
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: $screen-xs) and (min-width: 320px) {
   .region-featured-top {
     max-width: $screen-xs;
     display: block;
@@ -124,6 +124,17 @@
        display: none;
     }
   }
+}
+
+@media (max-width: $screen-sm) and (min-width: $screen-md) {
+  .region-featured-top {
+    max-width: $screen-sm;
+    display: block;
+    background-color: $grey;
+    text-align: center;
+
+  }
+
 }
 
 

@@ -8,8 +8,7 @@
   }
   .events-row{
     max-width: 360px;
-    background: $grey-border;
-    //margin-left: 3.75%;
+    background: $grey;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -70,14 +69,14 @@
 
 /************* Media Queries *****************/
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-xs) and (min-width: 320px) {
   .events-teaser {
     // padding-bottom: 80px;
     .view-content {
-      text-align: center;
+      max-width: 320px;
     }
     .events-row {
-      max-width: 360px;
+      width: 95%;
       background: $grey;
       display: block;
       text-align: center;
