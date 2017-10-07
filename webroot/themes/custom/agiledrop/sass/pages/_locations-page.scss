@@ -144,6 +144,10 @@
   .node--type-locations.node--view-mode-full{
     max-width: 95%;
     margin: 0 auto;
+    .field--name-field-location-image{
+      float: none;
+      margin: auto;
+    }
 
   }
   //**Sidebar view
