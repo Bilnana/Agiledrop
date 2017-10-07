@@ -60,6 +60,7 @@
   }
 }
 
+//** Equipment
 .field--name-field-location-taxonomy{
   display:inline-block;
   float: right;
@@ -142,40 +143,24 @@
 
   //** Location full view
   .node--type-locations.node--view-mode-full{
-    max-width: 95%;
+    max-width: 320px;
     margin: 0 auto;
+
+    //Conetnt
+    .node__content{
+      width: 95%;
+      margin: auto;
+    }
+
+    //** Location image
     .field--name-field-location-image{
       float: none;
       margin: auto;
     }
 
-  }
-  //**Sidebar view
-  .block-views-blockupcoming-events-location-page-block-1{
-    h2{
-      max-width: 80%;
-      margin: 0 auto;
-    }
-    .view-upcoming-events-location-page{
-      max-width: 80%;
-      margin: 0 auto;
-    }
-    .views-row{
-
-    }
-  }
-
-
-  //** Location image
-  .field--name-field-location-image{
-    margin-right: 2%;
-    width: 50%;
-    margin-bottom: 2%;
-  }
-
   //** Gmap
   .field--name-field-location-map {
-    max-width: 320px;
+    max-width: 100%;
 
     p {
       display:block;
@@ -210,9 +195,24 @@
   .field--name-field-location-phone-number,
   .field--name-field-location-website,
   .field--name-field-location-email{
-    max-width:240px;
+    width:95%;
     a{
       font-size: 16px;
+    }
+  }
+
+  }//end full view
+
+
+  //**Sidebar view
+  .block-views-blockupcoming-events-location-page-block-1{
+    h2 {
+      width: 95%;
+      margin-left: auto;
+    }
+    .view-upcoming-events-location-page{
+      width: 95%;
+      margin-left: auto;
     }
   }
 }
