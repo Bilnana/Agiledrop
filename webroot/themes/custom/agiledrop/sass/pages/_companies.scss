@@ -2,7 +2,6 @@
 /******* Companies list ********/
 .companies-teaser{
   owerflow: hidden;
-  //max-width: 1200px;
 }
 
 .companies-row{
@@ -64,19 +63,20 @@
 
 
 
-@media (max-width: $screen-xs) and (min-width: 320px) {
+@media (max-width: $screen-sm) and (min-width: 320px) {
   //** Company view
   .view-companies{
-    max-width: 95%;
-    margin: 0 auto;
+    width: 90%;
     overflow: hidden;
   }
   //** Company item
   .companies-row{
     overflow: hidden;
     vertical-align: top;
-    max-width: 320px;
+    width: 85%;
+    margin-left: 10px;
     display: block;
+
     .views-field-title{
       //display: block;
      // width:100%;
@@ -96,7 +96,7 @@
       float: left;
     }
     .company-body{
-      min-width: 90%;
+      width: 90%;
       text-align: justify;
 
     }
@@ -121,31 +121,65 @@
 
 }
 
-@media (max-width: $screen-sm) and (min-width: $screen-xs) { //768px
-  .companies-teaser{
-    max-width: 100%;
-    margin: 0 auto;
 
+@media (max-width: $screen-lg) and (min-width:$screen-sm) {
+  //** Company view
+  .view-companies{
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
   }
-  .block-agiledrop-page-title{
-    h1{
-      padding-left:5%;
+  //** Company item
+  .companies-row{
+    overflow: hidden;
+    vertical-align: top;
+    width: 90%;
+    display: block;
+    .views-field-title{
+      display: block;
+      width:90%;
+      a{
+        color: $black;
+      }
+      a:hover{
+        color: $orange;
+      }
+      &::before{
+        display: none;
+      }
+    }
+
+    .company-logo{
+      float: left;
+    }
+    .company-body{
+      width: 90%;
+      text-align: justify;
+
+    }
+
+    .views-field-view-node{
+      margin-top: 20px;
+      float: none;
+      width:100%;
+      margin: 0 auto;
+      text-align: center;
+      .button-read{
+        a{
+          @include button-blue;
+        }
+        a:hover, a:active{
+          @include button-hover;
+        }
+      }
     }
 
   }
 
-  }
-
-@media (max-width: $screen-md) and (min-width: $screen-sm){
-  .companies-teaser{
-    max-width: 95%;
-    margin: 0 auto;
-  }
 }
 
-@media (max-width: $screen-lg) and (min-width: $screen-md){
-  .companies-teaser{
-    max-width: 80%;
-    margin: 0 auto;
-  }
-}
+
+
+
+
+

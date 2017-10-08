@@ -1,6 +1,6 @@
 (function($) {
-
 	'use strict';
+
     $(function(){
 
         // Returns width of browser viewport
@@ -8,33 +8,33 @@
         // Returns width of HTML document
         var document = $(document).width();
 
-        $('.toggle-nav').click(function(e){
-            $('.menu--main').addClass('style-mobile').slideToggle('slow');
-            e.preventDefault();
-        });
-
+            $('.toggle-nav').click(function(e){
+                $('.menu--main').addClass('style-mobile').slideToggle('slow');
+                e.preventDefault();
+            });
     });
 
-    //Change color of navigation vhen screen is  < 420px
-
-    /* $('document').ready(function changeNavColor(){
-        var width = window.innerWidth;
-
-        if (width ==420){
-            $('.top-nav').addClass('blue-nav');
-        }
-        else{
-            console.log("Ne radi screen width.");
-        }
-    });*/
 
 
     //Change color of navgation on android and Iphone devices
     $('document').ready(function changeNavColor(){
         if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-            $('').toggleClass('blue-nav');
+            $('.top-menu').toggleClass('grey-nav');
         }
    });
+
+    //Change color of navigation when screen is  < 420px
+   /*
+    $(window).resize(function (){
+        var width = window.innerWidth;
+
+        if (width <=420){
+            $(".top-nav").addClass(".grey-nav");
+        } else {
+            $(".top-nav").removeClass(".grey-nav");
+        }
+    });*/
+
 
 
 })(jQuery);

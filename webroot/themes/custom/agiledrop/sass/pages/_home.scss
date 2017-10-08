@@ -197,89 +197,78 @@
 
 
 @media (max-width: $screen-xs) and (min-width: 320px){ //** 420px small
-
   //** Home inntro block
   .home-intro{
     display:block;
-    max-width:90%;
-    margin: auto;
+    width:90%;
     .views-row{
-     max-width: 90%;
-      margin-left: 2%;
-      .view-body{
-       max-width: 90%;
+      width: 75%;
+      margin-left: 10px;
       }
-    }
-    img{
-     //idth:95%;
-    }
-    a{
-      color: $black;
-      font-weight: bold;
-      font-size: 1.5em;
-    }
+      img{
+       width:90%;
+      }
+      a{
+        color: $black;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
   }
 
   //** Sidebar home
   .sidebar-info{
     display: block;
     float: none;
-    max-width:95%;
-    margin: auto;
-    .node--view-mode-teaser{
-      display: block;
-    }
-    .views-row{
-     margin: auto;
-      .field--name-body{
-        width:95%;
+    width:95%;
+    margin-left: 10px;
+
+      .node--view-mode-teaser{
+        display: block;
       }
-    }
-    .field--name-title{
-      display:block;
-      width: 95%;
-      float: none;
-     // font-size: 0.7em;
-    }
-    .field--name-field-item-image{
-      display: block;
-      float: none;
-    }
-    .field--name-body{
-      display: block;
-      width: 95%;
-      float: none;
-      margin-bottom: 20px;
+      .views-row{
+        width:95%;
+
+      .field--name-title{
+        display:block;
+        float: none;
+      }
+      .field--name-field-item-image{
+        display: block;
+        float: none;
+      }
+      .field--name-body{
+        display: block;
+        float: none;
+        margin-bottom: 20px;
+      }
     }
   }
 
   //** Region padding
   .region-featured-bottom-first{
+    h2{
+      margin-left: 20px;
+    }
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
   //** Featured companies
   .region-featured-bottom-second{
+    h2{
+      margin-left: 10px;
+    }
     padding-top: 50px;
     padding-bottom: 80px;
   }
 
   //** Latest events home
   .latest-events {
-
     .latest-event-item {
       display: block;
       max-width: 270px;
       margin: auto;
       margin-bottom: 10px;
-    }
-  }
-
-  //** Featured companies home
-  .block-views-blockfeatured-companies-home-block-1{
-    h2{
-      margin: auto;
     }
   }
 

@@ -48,7 +48,7 @@
 
 /************* Media Queries *****************/
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-xs) and (min-width: 320px){
   .region-top-block{
     display: none;
     .onboard{
@@ -70,16 +70,16 @@
   .banner{
     position:relative;
     text-align: center;
-
     .caption{
       color: $white;
       position: absolute;
       vertical-align: middle;
-      top: 20%;
+      top: 10%;
       left:5%;
       right: 5%;
       h1{
         font-size: 1em;
+        margin-bottom:0;
       }
       p{
         font-size: 0.8em;
@@ -92,7 +92,6 @@
 
   //** Header slider
   .banner{
-
     .caption{
       color: $white;
       position: absolute;
@@ -112,7 +111,6 @@
 }
 @media (max-width: $screen-md) and (min-width: $screen-sm){
   .banner{
-
     .caption{
       color: $white;
       position: absolute;

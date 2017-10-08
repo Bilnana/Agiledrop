@@ -22,18 +22,21 @@
   opacity:2;
 }
 
-.blue-nav{
-  background-color: cornflowerblue;
+.grey-nav{
+  background-color: $grey;
 }
+
+/******** Primary menu *********/
 .region-primary-menu{
     text-align: center;
-    padding: 10px;
 
     ul{
       display: block;
     }
     li{
       display: inline-block;
+      margin-top: 0.9em;
+      margin-bottom: 0.9em;
     }
     a{
       text-decoration: none;
@@ -93,7 +96,12 @@
 
 
 @media (max-width: $screen-xs){ //** 420px
+
   .region-primary-menu {
+    .block-system-branding-block{
+      display: none;
+      float: none;
+    }
     .menu--main {
       display: none;
     }
@@ -107,23 +115,48 @@
   .top-menu{
     display: block;
     text-align: center;
+    height: 60px;
+    background-color:lightslategrey;
+    border-bottom:2px solid $orange;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+  }
+  .logo-responsive{
+    display:inline-block;
+    float: left;
+    margin-left: 10px;
+    margin-top:10px;
   }
   .toggle-nav{
-    display: block;
+    display: inline-block;
     color: $blue;
     font-weight: bold;
     font-size:32px;
     float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+
   }
-  .toggle-nav:hover{
-    color: $grey;
+  .toggle-nav:hover ,.toggle-nav:active{
+    color: $orange;
   }
-  .toggle-nav:active{
-    color: $blue;
+
+  //**Fixed class when nav is active, disable scrolling
+  .fixedPosition
+  {
+    position: fixed;
   }
 
   /*** Mobile style ***/
   .menu--main.style-mobile{
+    position: fixed;
+    top:60px;
+    left:0;
+    width: 100%;
+    z-index: 1;
 
     ul{
       width: 100%;
@@ -134,19 +167,20 @@
     .menu-item{
       display: block;
       margin: auto;
-      padding-bottom: 5px;
-      padding-top:5px;
-      border-bottom: 1px solid $grey-border;
+      border-bottom: 2px solid $orange;
+      background-color: lightslategrey;
+      padding: 10px;
       a{
-        color:$blue;
-        font-size: 24px;
         font-weight: bold;
+        color: $blue;
+        transition-property: color;
+        font-size: 24px;
+        transition-duration: .5s;
       }
     }
     .menu-item:hover, .menu-item:active{
-      background-color:$grey-border;
       a{
-        color:$grey;
+        color:$orange;
       }
     }
 
