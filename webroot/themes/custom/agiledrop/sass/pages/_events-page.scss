@@ -5,7 +5,8 @@
   margin: auto;
   .field--name-field-event-image{
     width:100%;
-    margin-left: 40%;
+    padding-left: 40%;
+    margin: auto;
     img{
       border-radius: 50%;
       height:180px;
@@ -150,15 +151,12 @@
 @media (max-width: $screen-xs) and (min-width: 320px) { //420px
   //** Full page view event
   .node--view-mode-full{
-    //display: block;
-    max-width:320px;
-    //margin-left:5%;
+    width:100%;
     h2{
       font-size:1.2em;
     }
     .field--name-field-event-image{
-      //width:100%;
-      text-align: center;
+      //background-color: red;
       img{
         border-radius: 0;
         height:40%;

@@ -22,8 +22,8 @@
   opacity:2;
 }
 
-.blue-nav{
-  background-color: cornflowerblue;
+.grey-nav{
+  background-color: $grey;
 }
 
 /******** Primary menu *********/
@@ -96,7 +96,12 @@
 
 
 @media (max-width: $screen-xs){ //** 420px
+
   .region-primary-menu {
+    .block-system-branding-block{
+      display: none;
+      float: none;
+    }
     .menu--main {
       display: none;
     }
@@ -110,6 +115,15 @@
   .top-menu{
     display: block;
     text-align: center;
+    height: 60px;
+    background-color:lightslategrey;
+    border-bottom:2px solid $orange;
+  }
+  .logo-responsive{
+    display:block;
+    float: left;
+    margin-left: 10px;
+    margin-top:10px;
   }
   .toggle-nav{
     display: block;
@@ -118,12 +132,10 @@
     font-size:32px;
     float: right;
     margin-right: 10px;
+    margin-top: 10px;
   }
-  .toggle-nav:hover{
-    color: $grey;
-  }
-  .toggle-nav:active{
-    color: $blue;
+  .toggle-nav:hover ,.toggle-nav:active{
+    color: $orange;
   }
 
   /*** Mobile style ***/
@@ -138,19 +150,20 @@
     .menu-item{
       display: block;
       margin: auto;
-      padding-bottom: 5px;
-      padding-top:5px;
-      border-bottom: 1px solid $grey-border;
+      border-bottom: 1px solid $orange;
+      background-color: lightslategrey;
+      padding: 10px;
       a{
-        color:$blue;
-        font-size: 24px;
         font-weight: bold;
+        color: $blue;
+        transition-property: color;
+        font-size: 24px;
+        transition-duration: .5s;
       }
     }
     .menu-item:hover, .menu-item:active{
-      background-color:$grey-border;
       a{
-        color:$grey;
+        color:$orange;
       }
     }
 

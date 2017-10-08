@@ -48,7 +48,7 @@
 
     a{
       color: $white;
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 
@@ -71,22 +71,31 @@
 
 @media (max-width: $screen-xs) and (min-width: 320px) {
   .events-teaser {
-    // padding-bottom: 80px;
-    .view-content {
-      max-width: 320px;
-    }
-    .events-row {
-      width: 95%;
-      background: $grey;
-      display: block;
-      text-align: center;
-      margin: auto;
-      margin-bottom: 20px;
 
+    .events-row {
+      width: 72%;
+      margin: 1.5%;
+      margin-bottom: 20px;
     }
     .views-field-view-node{
       padding-bottom:40px;
       margin-bottom: 0;
+    }
+
+    .views-field-title{
+      a{
+        color: $blue;
+        font-size: 24px;
+      }
+    }
+    .button-read{
+      a{
+        @include responsive-blue;
+
+      }
+      a:hover{
+        @include button-hover;
+      }
     }
 
   }
@@ -99,12 +108,27 @@
       text-align: center;
     }
     .events-row {
-      max-width: 720px;
+      max-width: $screen-sm;
       background: $grey;
       display: block;
       text-align: center;
       overflow: hidden;
       margin-bottom: 20px;
+    }
+    .views-field-title{
+      a{
+        color: $blue;
+        font-size: 20px;
+      }
+    }
+    .button-read{
+      a{
+        @include responsive-blue;
+
+      }
+      a:hover{
+        @include button-hover;
+      }
     }
     .event-image-teaser{
       //margin:;

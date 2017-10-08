@@ -15,26 +15,25 @@
 
     });
 
-    //Change color of navigation vhen screen is  < 420px
+    //Change color of navigation when screen is  < 420px
 
-    /* $('document').ready(function changeNavColor(){
+    $(window).resize(function (){
         var width = window.innerWidth;
 
-        if (width ==420){
-            $('.top-nav').addClass('blue-nav');
+        if (width <=420){
+            $(".top-nav").addClass(".grey-nav");
+        } else {
+            $(".top-nav").removeClass(".grey-nav");
         }
-        else{
-            console.log("Ne radi screen width.");
-        }
-    });*/
+    });
 
 
-    //Change color of navgation on android and Iphone devices
+    /*Change color of navgation on android and Iphone devices
     $('document').ready(function changeNavColor(){
         if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
             $('').toggleClass('blue-nav');
         }
-   });
+   });*/
 
 
 })(jQuery);
