@@ -150,25 +150,26 @@
 
 @media (max-width: $screen-xs) and (min-width: 320px) { //420px
   //** Full page view event
-  .node--view-mode-full{
+  .node--type-events.node--view-mode-full{
     width:100%;
     h2{
       font-size:1.2em;
     }
     .field--name-field-event-image{
       //background-color: red;
+      padding-left: 23%;
       img{
         border-radius: 0;
-        height:40%;
-        width:40%;
       }
     }
     .field--name-title{
       display: block;
       text-align: center;
       width:95%;
-
-
+    }
+    .field--name-body{
+      margin-top: 50px;
+      padding-left: 3%;
     }
     .field--name-field-event-type-taxonomy{
       text-align: center;
